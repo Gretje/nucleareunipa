@@ -13,6 +13,7 @@
 *.ilg
 *.ind
 *.ist
+*.latexmain
 *.lof
 *.log
 *.lot
