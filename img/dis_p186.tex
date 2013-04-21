@@ -1,0 +1,27 @@
+\begin{tikzpicture}[>=stealth, auto, scale=1.3]
+  % diag 1
+	\draw[->] (-.25,-.25) -- (5,-.25) node [below] {$s$};
+	\draw[->] (-0.25,-.25) -- (-.25,3) node [left] {$t$};
+	\draw[->] (0,0) -- (0.5,1) node [below right] {$n$};
+	\draw (.5,1) -- (0.75,1.5) node [left] {$g_W$};
+	\draw[->] (0.75,1.5) -- node [right] {$p^+$} (0,3);
+	\draw[dashed] (.75,1.5) -- (3,1.5);
+	\node (a) at (2,1.5) [above] {$\underrightarrow{W}^-$};
+	\node (b) at (2,1.5) [below] {$\overleftarrow{W}^+$};
+	\draw[->] (3.75,0) -- (3.25,1) node [below left] {$\nu_e$};
+	\draw (3.25,1) -- (3,1.5) node [right] {$g_W$};
+	\draw[->] (3,1.5) -- node [left] {$e^-$} (3.75,3);
+	% diag 2
+	\begin{scope}[shift={(5.5,0)}]
+    \draw[->] (-.25,-.25) -- (5,-.25) node [below] {$s$};
+	\draw[->] (-0.25,-.25) -- (-.25,3) node [left] {$t$};
+	\draw[->] (0,0) -- (0.5,1) node [below right] {$\mu^-$};
+	\draw (.5,1) -- (0.75,1.5) node [left] {};
+	\draw[->] (0.75,1.5) -- node [right] {$\nu_\mu$} (0,3);
+	\draw[dashed] (.75,1.5) -- (3,1.5);
+	\node (a) at (2,1.5) [above] {$\underrightarrow{W}^-$};
+	\draw[->] (3.75,0) -- (3.25,1) node [below left] {$\nu_e$};
+	\draw (3.25,1) -- (3,1.5) node [right] {};
+	\draw[->] (3,1.5) -- node [left] {$e^-$} (3.75,3);
+	\end{scope}
+\end{tikzpicture}

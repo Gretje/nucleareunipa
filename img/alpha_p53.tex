@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=triangle 45]
+	\draw [dashed] (0,1) -- (6,1) node [circle,draw=black,fill=black,label=above:$ze$,inner sep=0pt,minimum size=1mm] {};
+	\draw [dashed,name path=asseX] (0,0) node [circle,draw=black,fill=black,label=below:$2e$,inner sep=0pt,minimum size=1mm] {} -- (6,0);
+	\draw [->] (1.5,1) -- node [label=right:$p$] {} (1.5,0);
+	\node (2e) at (6,1) {};
+	\path [dashed,name path=guida] (2e) to +(-120:5cm);
+	\draw [name intersections={of=asseX and guida,by={centro}}, dashed] (centro) to +(-120:3cm) node (blu) {};
+	\draw (centro) +(.5,0) arc (0:-120:.5cm);
+	\path (centro) -- +(-70:1.1cm) node [label=$\theta$] {};
+	\draw (0,0) .. controls (4.5,0) and (centro) .. (blu);
+\end{tikzpicture}

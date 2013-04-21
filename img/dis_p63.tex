@@ -1,0 +1,14 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=stealth
+  ,x=1.0cm,y=1.0cm]
+  \draw[->,color=black] (-0.72,0) -- (8.62,0);
+  \foreach \x in {,1,2,3,4,5,6,7,8}
+  \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+  \draw[->,color=black] (0,-0.54) -- (0,6.14);
+  \foreach \y in {,1,2,3,4,5,6}
+  \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+  \clip(-0.72,-0.54) rectangle (8.62,6.14);
+  \draw (-0.24,6.28) node[anchor=north] {$\rho$};
+  \draw (6.89,-0.02) node[anchor=north west] {$r$};
+  \draw[smooth,samples=100,domain=0.0:8.623178016726417]
+  plot(\x,{5/(2.718281828^(((\x)-3.32)/0.55)+1)});
+\end{tikzpicture}

@@ -1,0 +1,156 @@
+\documentclass[11pt,openany]{scrbook}              % classe libro KOMA-Script
+\usepackage[utf8x]{inputenc}                       % codifica file di input
+\usepackage[T1]{fontenc}                           % codifica dei font
+\usepackage[italian]{babel}                        % sillabazione e traduzione di alcuni token
+\usepackage{hyperref}                              % collegamenti cliccabili
+
+\usepackage[version=3]{mhchem}                     % elementi di chimica
+\usepackage[fleqn]{mathtools}                      % elementi di matematica (sostitutivo e più completo di amsmath)
+	\newtagform{itsq}[\textit]{[}{]}
+	\usetagform{itsq}
+\usepackage{empheq,bm}                             % equazioni evidenziate/riquadrate + grassetto matematico
+\usepackage{braket}                                % typesetting dei vettori di stato in notazione di Dirac
+\usepackage{siunitx}                               % unità di misura del sistema internazionale
+\usepackage{eucal}                                 % font calligrafico 'eulero'
+\usepackage[nointegrals]{wasysym}                  % simboli testuali aggiuntivi
+\usepackage{geometry}                              % permette di reimpostare i margini di una o più pagine
+\usepackage[noadjust]{marginnote}                  % fornisce il comando \marginnote{arg1} sostitutivo di \marginpar{}
+\usepackage{mparhack}                              % supporto alle note a margine
+\usepackage{flafter}                               % assicura che i 'float' (ambienti 'table' e 'figure') non appaiano mai prima della dichiarazione
+
+\usepackage{tabularx}                              % tabelle (eXtended)
+\usepackage{booktabs}                              % linee di separazione migliorate (comandi \toprule, \midrule e \bottomrule)
+\usepackage{graphicx}                              % permette l'immissione di immagini in maniera relativamente semplice
+\usepackage[T1,safe]{tipa}                         % simbologia fonetica, usata per caratteri come il lambda tagliato
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}  % permette l'uso di una varietà incredibile di colori senza doverli definire
+\usepackage{tikz}                                  % disegni di elevata precisione
+	\usetikzlibrary{arrows,intersections}
+\usepackage{circuitikz}
+\usepackage{caption}                               % customizzazione delle didascalie
+\usepackage{subfig}                                % permette di inserire più figure in un unico spazio
+\usepackage{wrapfig}                               % inserimento figure con testo attorno
+\usepackage{pdfpages}
+
+% % % SPERIMENTALE % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% Si basa si un pacchetto work-in-progress che ho scritto nel week-end, quindi         %
+% NON funzionerà se selezionato, a meno che non mi chiediate il pacchetto.             %
+% In particolare, questo pacchetto va in conflitto con \usepackage[utopia]{mathdesign} %
+% ovviamente, perché stanno cercando di impostare un font diverso ciascuno.            %
+% Per capire cosa fa il pacchetto 'lecturenotes' guardate le differenze fra            %
+% 'nucleare.pdf' e 'nucleare_experimental.pdf'.                                        %
+%                                                                                      %
+% I file (rilasciati sotto GNU GPL v3+) sono disponibili sia come repo su GitHub via   %
+%                                                                                      %
+%     git clone https://github.com/Vieler/physcollection.git                           %
+%                                                                                      %
+% sia come file zippato al link (ma meglio il metodo sopra)                            %
+%                                                                                      %
+%     <https://github.com/downloads/Vieler/physcollection/physcollection.tar.gz>       %
+%                                                                                      %
+% Per il pieno supporto dello stile è necessario installare separatamente da terminale %
+% il font 'URW-Garamond' tramite l'utility 'getnonfreefonts' che si trova su           %
+% http://www.tug.org/fonts/getnonfreefonts/ ma dovreste già averla.                    %
+%                                                                                      %
+% Per il font, da terminale dare (evitate la prima riga se avete già getnonfreefonts!) %
+%                                                                                      %
+%     sudo env PATH=$PATH texlua install-getnonfreefonts                               %
+%     sudo env PATH=$PATH getnonfreefonts garamond                                     %
+%                                                                                      %
+% % % SPERIMENTALE % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%
+\usepackage[green]{lecturenotes}
+
+\newenvironment{sistema}%
+{\left\lbrace\begin{array}{@{}l@{}}}%
+{\end{array}\right.}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\mean}[1]{\left\langle\, #1 \,\right\rangle}
+\makeatletter
+\@ifpackageloaded{lecturenotes}{}{
+	\usepackage[utopia]{mathdesign}%
+	\newcommand{\breaknote}{%
+		\vspace*{1ex}%
+		\par\noindent\hrulefill\raisebox{-0.5ex}{\S}\hrulefill\par%
+		\vspace{1.5ex}%
+	}%
+	\newcommand{\MainColor}{black}
+	\newcommand{\SecondaryColor}{black}
+	\newcommand{\MinorColor}{black}
+	\hypersetup{linkcolor=OliveGreen}
+}
+\makeatother
+% Correzione della funzione exp in pgf, in attesa della correzione
+% da parte del mantenitore di Tikz
+% fixed exp function.
+%
+\makeatletter
+\let\pgfmath@function@exp\relax % undefine old exp function
+\pgfmathdeclarefunction{exp}{1}{%   
+  \begingroup
+    \pgfmath@xc=#1pt\relax
+	\pgfmath@yc=#1pt\relax
+	\ifdim\pgfmath@xc<-9pt
+	  \pgfmath@x=1sp\relax
+	\else
+	  \ifdim\pgfmath@xc<0pt
+	    \pgfmath@xc=-\pgfmath@xc
+	  \fi
+	  \pgfmath@x=1pt\relax
+	  \pgfmath@xa=1pt\relax
+	  \pgfmath@xb=\pgfmath@x
+	  \pgfmathloop%
+	    \divide\pgfmath@xa by\pgfmathcounter
+		\pgfmath@xa=\pgfmath@tonumber\pgfmath@xc\pgfmath@xa%
+	    \advance\pgfmath@x by\pgfmath@xa
+	  \ifdim\pgfmath@x=\pgfmath@xb
+	  \else
+	    \pgfmath@xb=\pgfmath@x
+	  \repeatpgfmathloop%
+	  \ifdim\pgfmath@yc<0pt
+	    \pgfmathreciprocal@{\pgfmath@tonumber\pgfmath@x}%
+	    \pgfmath@x=\pgfmathresult pt\relax
+	  \fi
+	\fi
+	\pgfmath@returnone\pgfmath@x%
+  \endgroup
+}
+\makeatother
+% Fine correzione funzione exp
+% Definizione comando per multipletti (numeri cerchiati)
+\newcommand*\Ci[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle,draw,inner sep=.5pt] (char) {#1};}}
+% Fine definizione multipletti
+\hypersetup{%
+	colorlinks=true,%
+	linktocpage=true,%
+	breaklinks=true,%
+	pdftitle={Appunti di Fisica Nucleare e delle Particelle},%
+	pdfauthor={Costanza Argiroffi},%
+}
+\title{Appunti di Fisica Nucleare e delle Particelle}
+\subtitle{Corso tenuto dal Prof.re~G.~Ziino --- A.A. 2012/2013}
+\author{Costanza Argiroffi}
+
+\begin{document}
+
+% Questo file deve essere usato con lecturenotes altrimenti non è ben allineato
+% e stonerà col resto del documento. 
+\input{title}
+%\maketitle
+\frontmatter
+\input{int}
+\tableofcontents
+
+\mainmatter
+\input{1}
+\input{2}
+\input{2b}
+\input{3}
+\input{4}
+\input{5}
+\input{6}
+
+\appendix
+\input{attached}
+\input{rif}
+\end{document}

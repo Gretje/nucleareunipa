@@ -1,0 +1,23 @@
+\begin{tikzpicture}[line cap=round,line join=round,>=stealth
+  ,x=3.331070320176694cm,y=2.697038194702317cm]
+  \draw[->,color=black] (-0.14,0) -- (2.56,0);
+  \foreach \x in {,0.2,0.4,0.6,0.8,1,1.2,1.4,1.6,1.8,2,2.2,2.4}
+  \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt);
+  \draw[->,color=black] (0,-0.17) -- (0,1.68);
+  \foreach \y in {,0.2,0.4,0.6,0.8,1,1.2,1.4,1.6}
+  \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt);
+  \clip(-0.14,-0.17) rectangle (2.56,1.68);
+  \draw[smooth,samples=100,domain=0.0:2.5574449791162808]
+  plot(\x,{2.718281828^(2*(\x)-4*(\x))});
+  \draw[smooth,samples=100,domain=0.0:0.5] plot(\x,{1-2*(\x)});
+  \draw (-0.09,1.68) node[anchor=north] {$N$};
+  \draw (0.03,1.11) node[anchor=north west] {$N_0$};
+  \draw (0.47,0.51) node[anchor=north west] {$1$};
+  \draw (0.3,0.32) node[anchor=north] {$2$};
+  \draw (0.48,0.03) node[anchor=north west] {$\tau$};
+  \draw (2.03,-0.01) node[anchor=north west] {$t$};
+  \begin{scriptsize}
+	\fill [color=\MinorColor] (0,1) circle (1.5pt);
+	\fill [color=\MinorColor] (0.5,0) circle (1.5pt);
+  \end{scriptsize}
+\end{tikzpicture}

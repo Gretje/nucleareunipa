@@ -1,0 +1,15 @@
+\begin{tikzpicture}[>=stealth,
+  punto/.style={circle, draw=\MinorColor, fill=\MinorColor, inner sep=1pt}]
+  \draw[->] (-2.5,0) -- (3.5,0) node [below] {$T_3$};
+  \draw[->] (0,-2.5) -- (0,2.5) node [left] {$Y$};
+  \draw (1,1.5) node [punto, label=above right:$p^+$] {}
+     -- (2,0) node [punto, label=below right:$^{+1}$, label=above right:$\Sigma^+$] {}
+     -- (1,-1.5) node [punto, label=below right:$\Xi^0$] {}
+     -- (-1,-1.5) node [punto, label=below left:$\Xi^-$] {}
+     -- (-2,0) node [punto, label=below left:$^{-1}$, label=above left:$\Sigma^-$] {}
+     -- (-1,1.5) node [punto, label=above left:$n$] {} -- cycle;
+  \node (a) at (0,1.5) [above right] {$^{+1}$};
+  \node (b) at (0,-1.5) [below left] {$^{-1}$};
+  \node (s) at (0,.25) [punto, label=above left:$\Sigma^0$] {};
+  \node (l) at (0,-.25) [punto, label=below left:$\Lambda^0$] {};
+\end{tikzpicture}

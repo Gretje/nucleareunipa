@@ -1,0 +1,12 @@
+\begin{tikzpicture}[>=triangle 45]
+  \foreach \y in {0, .25, .5, .75, 1}
+  {
+    \draw[->] (0, \y) -- (4, \y);
+    \draw[<-] (5, \y) -- (9, \y);
+  }
+  \node (a) at (-.25,.37) [left] {$a$};
+  \node (b) at (9.25,.37) [right] {$b$};
+  \node (sa) at (2,-.25) [below] {$s_a=0$};
+  \node (sb) at (7,-.25) [below] {$s_b=0$};
+  \node (spazio) at (0,1.25) {};
+\end{tikzpicture}

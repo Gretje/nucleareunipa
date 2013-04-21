@@ -1,0 +1,24 @@
+\begin{tikzpicture}[line cap=round,line
+  join=round,>=stealth,x=1.0cm,y=1.0cm,scale=2]
+  \clip(18.27,-2.44) rectangle (25.13,1.62);
+  \draw [->] (18.84,-1.85) -- (18.84,1.49);
+  \draw [->] (18.84,-1.85) -- (24.97,-1.85);
+  \draw[smooth,samples=100,domain=18.84:24.31]
+  plot(\x,{sin((1.2*(\x))*180/pi)+sin(((\x))*180/pi)});
+  \draw (18.49,-0.26) node[anchor=north west] {$ Mc^2 $};
+  \draw [dash pattern=on 1pt off 1pt] (21.55,1.09)-- (21.55,-1.85);
+  \draw [dash pattern=on 1pt off 1pt] (18.84,1.09)-- (21.55,1.09);
+  \draw (18.64,1.69) node[anchor=north west] {$E$};
+  \draw (18.44,1.14) node[anchor=north west] {$E_\text{max}$};
+  \draw (21.23,-1.87) node[anchor=north west] {$R_1 + R_2$};
+  \draw [dash pattern=on 1pt off 1pt] (18.84,-1.62)-- (24.58,-1.62);
+  \draw (18.86,-1.26) node[anchor=north west] {$c^2(M_1 + M_2)$};
+  \draw (24.78,-1.84) node[anchor=north west] {$R$};
+  \begin{scriptsize}
+	\fill [color=\MainColor] (18.84,-0.59) circle (1.5pt);
+	\fill [color=\MainColor] (21.55,1.09) circle (1.5pt);
+	\fill [color=\MainColor] (21.55,-1.85) circle (1.5pt);
+	\fill [color=\MainColor] (18.84,1.09) circle (1.5pt);
+	\fill [color=\MainColor] (18.84,-1.62) circle (1.5pt);
+  \end{scriptsize}
+\end{tikzpicture}

@@ -1,0 +1,262 @@
+\chapter{Riferimenti - Formule e costanti numeriche}
+\section{Masse}
+\begin{table}[!h]
+  \centering
+  \caption{Dati relativi alle masse.}
+  \begin{tabular}{>{\scshape}lr}
+	\toprule
+    $\gamma - 1$ elettrone          & 2$\div$20\\
+	$\gamma - 1$ protone/neutrone   & $< 1$\%\\
+	Difetto di massa $^4$He         & $\simeq 28$ MeV\\
+	U.m.a.                          & $\simeq 931,5$Mev/c$^2 = 11,66\cdot 10^{-24}$g\\
+	Densità nucleare                & $10^{14}$g/cm$^3$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\begin{table}[!h]
+  \centering
+  \caption{Massa particelle (in MeV/c$^2$, eccetto il neutrino)}
+  \subfloat[][]{
+	\begin{tabular}{>{\scshape}lr}
+	  \toprule
+	  Elettrone ($e$) & 0,5\\
+	  Protone ($p$)   & 938 ovvero 1,0073 \textsc{um}\\
+	  Neutrone ($n$)  & 939 ovvero 1,0087 \textsc{um}\\
+	  \bottomrule
+	\end{tabular}
+  }\\
+  \subfloat[][]{
+	\begin{tabular}{>{\scshape}lr}
+	  \toprule
+	  Neutrino $\nu$     & < 60 eV\\
+	  Muone ($\mu$)      & 105\\
+	  Muone ($\mu^-$)    & 106\\
+	  Pione ($\pi$)      & 138\\
+	  Quark up ($u$)     & 336\\
+	  Quark down ($d$)   & 336\\
+	  	  \bottomrule
+	\end{tabular}
+  }
+  \subfloat[][]{
+	\begin{tabular}{>{\scshape}lr}
+	  \toprule
+	  Mesone $K^0$         & 497,7\\
+	  Quark strange ($s$) & 538\\
+	  Eta ($\eta$°)       & 549\\
+	  Iperone $\Lambda$   & 1115,6\\
+	  Quark charm ($c$)   & 1650\\
+	  Tauone ($\tau$)     & 1782\\
+	  \bottomrule
+	\end{tabular}
+  }
+\end{table}
+\section{Energie}
+\begin{empheq}[box=\fbox]{align*}
+  h &= 6,626\cdot 10^{-34}J\,s = 4,135\cdot 10^{-15}eV\,s\\
+  \hslash &= \frac{h}{2\pi} = 1,054\cdot 10^{-34}J\,s = 6,582\cdot
+  10^{-16}eV\,s\\
+  1 eV &= 1,6\cdot 10^{-19}J = 1,6\cdot 10^{-12}\text{erg}\\
+  e^- &= 1,6\cdot 10^{-19}C
+\end{empheq}
+
+\begin{table}[!h]
+  \centering
+  \caption{Energie di soglia di creazione}
+  \begin{tabular}{>{\scshape}l>{$}r<{$}}
+	\toprule
+	Elettrone-Positrone & \simeq 1,022 \text{MeV}\\
+	Protone-Antiprotone & \simeq 1,9 \text{GeV}\\
+	\bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[!h]
+  \centering
+  \caption{Energia dei fotoni}
+  \begin{tabular}{>{\scshape}rl}
+	\toprule
+	Microonde & $\sim$ 1 meV\\
+	IR        & $\sim$ 1 eV\\
+	Visibile  & $\sim$ 10 eV\\
+	UV        & $\sim$ 1 keV\\
+	Soft-X    & $\sim$ 10 keV\\
+	Hard-X    & $\sim$ 1-100 MeV\\
+	$\gamma$  & $\sim$ >100 MeV\\
+	\bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Miscellanea}
+\begin{description}
+  \item[Sezione d'urto tipica] centibarn - barn (1 barn = $10^{-24}$ m$^2$)
+  \item[Parametro d'urto esperimento di Rutherford] $p(\theta)_\text{min} =
+	10^{-13}$cm e $p(\theta)_\text{max} = 10^{-8}$cm
+  \item[$R$ parametro d'urto minimo] $R = r_0A^{1/3}$ dove $A$ è il numero
+	atomico e $r_0 \simeq 1,2\cdot 10^{-13}$cm
+  \item[Lunghezza d'onda elettronica] $E = 1$ GeV
+	$\rightarrow$\textcrlambda$\simeq 1,95\cdot 10^{-14}$cm
+  \item[Magnetone nucleare] $\mu_N = \dfrac{e\hslash}{2m_pc}\simeq
+	0,505\cdot 10^{-23}$erg/gauss
+\end{description}
+
+\section{Formule}
+\begin{description}
+  \item[Energia di soglia]
+	\begin{equation}
+	  E_s = \frac{M_\text{min}^2 - M^2 - m^2}{2M}c^2
+	\end{equation}
+  \item[Energia di legame]
+	\begin{equation}
+	  \Delta E_0 = (E_{01} + E_{02}) - E_0 = \Delta M c^2
+	\end{equation}
+  \item[Sezione d'urto di Rutherford]
+	\begin{equation}
+	  \frac{\text{d}\sigma}{\text{d}\Omega} =
+	  \frac{1}{4}\left[\frac{Ze(2e)^2}{m_\alpha v^2}\right]^2
+	  \frac{1}{\sin^4(\theta/2)}
+	\end{equation}
+  \item[Frazione di impacchettamento]
+	\begin{equation}
+	  f = \frac{M(A,Z) - A\,UM}{A\,UM}
+	\end{equation}
+  \item[Fattore di forma] 
+	\begin{gather}
+	  \abs{F}^2 = \frac{\abs{f(\theta)}^2}{\abs{f_0(\theta)}^2}\\
+	  F = F(\vec{q}) = \int \rho(\vec{r})e^{i\vec{q}\cdot\vec{r}}\text{d}^3r
+	\end{gather}
+  \item[Formula di Saxon] $c = 1,07A^{1/3}\cdot 10^{-13}$cm, $Z_1 = 0,545\cdot
+	10^{-13}$cm, $\rho_1 =$ costante di normalizzazione
+	\begin{equation}
+	  \rho(r) = \frac{\rho_1}{e^{(r-c)/Z_1}+1}
+	\end{equation}
+  \item[Momento magnetico nucleare]
+	\begin{equation}
+	  \vec{\mu}_I = \frac{g_I\mu_N\vec{I}}{\hslash} = \gamma \vec{I}
+	\end{equation}
+  \item[Regola degli intervalli] 
+	\begin{equation}
+	  \frac{W_\alpha-W_{\alpha+1}}{W_{\alpha+1}-W_{\alpha+2}} =
+	  f_\alpha/f_{\alpha+1}
+	\end{equation}
+  \item[Momento di quadrupolo elettrico del nucleo]
+	\begin{equation}
+	  Q = \int \rho_c^N(3Z^{\prime 2}-r^2)\text{d}V
+	\end{equation}
+  \item[Energia elettrostatica dovuta al quadrupolo]
+	\begin{equation}
+	  \Delta W = \frac{1}{4}\frac{\partial^2\varphi}{\partial
+	  Z^2}Q\left( \frac{3}{2}\cos^2(\theta) - \frac{1}{2} \right)
+	\end{equation}
+  \item[Energia di quadrupolo elettrico semiclassica]
+	\begin{equation}
+	  \Delta W_Q = \frac{1}{4}\frac{\partial^2\varphi}{\partial Z^2}Q\left(
+	  \frac{3}{2}K_f^2-2i^2j^2 \right)\frac{1}{4i^2j^2}
+	\end{equation}
+  \item[Energia di quadrupolo eletrico quantistica]
+	\begin{equation}
+	  \Delta W_Q = \frac{1}{4}\frac{\partial^2 \varphi}{\partial Z^2}Q\left(
+	  \frac{3}{2}K_f(K_f+1)-2i(i+1)j(j+1)
+	  \right)\frac{1}{i(2i-1)j(2j-1)}
+	\end{equation}
+  \item[Formula di Weizs\"acker] $a_\text{vol}=15,67\quad a_\text{sup} =
+	17,23\quad 3a_c/5 = 0,7\quad a_\text{simm} = 93,15\quad \delta = 1,2$
+	\begin{multline}
+	  M(A,Z) = \left[ m_pZ + m_N(A-Z) \right] -a_\text{vol}A +
+	  a_\text{sup}A^{2/3}+\\
+	  +\frac{3}{5}a_c\frac{Z^2}{A^{1/3}} +
+	  a_\text{simm}\frac{(A/2-Z)^2}{A} + \frac{\delta}{a^{1/2}}
+	\end{multline}
+  \item[Fattore di Gamow]
+	\begin{equation}
+	  G(T_\alpha,Z',R') =
+	  \frac{2e^2Z'}{\hslash}\sqrt{\frac{2m_\alpha}{T_\alpha}} =
+	  \frac{4}{\hslash}\sqrt{m_\alpha Z'R'}
+	\end{equation}
+  \item[Regola d'oro di Fermi]
+	\begin{equation}
+	  W = \frac{2\pi}{\hslash}\abs{H_{if}}^2\rho_f(E_i)\qquad \rho_f(E_i) =
+	  \left.\frac{\text{d}N}{\text{d}E_f}\right|_{E_f=E_i}
+	\end{equation}
+  \item[Sezione d'urto di produzione della risonanza (no spin)]
+	\begin{equation}
+	  G^{(\ell)} = \frac{4\pi}{K^2_R}(2\ell +
+	  1)\frac{\Gamma^2/4}{(E-E_R)^2+\Gamma^2/4}
+	\end{equation}
+  \item[Sezione d'urto di produzione della risonanza (con spin)]
+	\begin{equation}
+	  G^{(\ell)} = \frac{4\pi}{K^2_R}
+	  \frac{(2J_R + 1)}{(2S_a + 1)(2S_b + 1)}\frac{\Gamma^2/4}{(E-E_R)^2+\Gamma^2/4}
+	\end{equation}
+\end{description}
+\section{Reazioni nucleari}
+\begin{table}[!h]
+  \centering
+  \caption{Alcune reazioni basilari.}
+  \begin{tabularx}{\textwidth}{>{$}r<{$}X}
+	\toprule
+	\gamma + N \rightarrow e^+ + e^- + N & Creazione coppia elettrone -
+	positrone\\
+	n + p \rightarrow d + \gamma & Reazione usata per misurare la massa di $n$
+	($d$ è il deutone)\\
+	\text{U}^{238} \rightarrow \text{Th}^{234} + \alpha & $T_\alpha\simeq 4,2$ MeV\\
+	N(A,Z) \rightarrow N(A,Z+1) + e^- + \bar{\nu}\quad(n\rightarrow p^+) &
+	Decadimento $\beta^-$\\
+    N(A,Z) \rightarrow N(A,Z-1) + e^+ + \nu\quad(p^+\rightarrow n) &
+	Decadimento $\beta^+$\\
+	p^+ + e^- \rightarrow n + \nu & Processo di cattura $K$\\
+	\pi^- + p^+ \rightarrow \Lambda^0 + K^0 & Processo di produzione (associata)
+	di $\Lambda^0$ e $K^0$\\
+	\Lambda^0 \rightarrow  p^+ + \pi^-,\quad K^0 \rightarrow \pi^+ + \pi^- &
+	Decadimenti deboli di $\Lambda^0$ e $K^0$\\
+	\pi^- + p^+ \rightarrow K^+ + K^- + n & Processo di produzione di $K^+$\\
+	K^- + p^+ \rightarrow \bar{K}^0 + n & Produzione di $\bar{K}^0$\\
+	K^- + N \rightarrow \pi + \Lambda^0, \quad K^- + N \rightarrow \pi + \Sigma &
+	Assorbimento del mesone $K^-$\\
+	Kì- + p^+ \rightarrow \eta^0 + \Lambda^0 & Produzione del mesone $\eta^0$\\
+	\pi^- \rightarrow \mu^- + \bar{\nu}_\mu & Produzione del muone\\
+	\mu^- \rightarrow e^- + \bar{\nu}_e + \nu_{\mu} & Decadimento debole del
+	muone\\
+	\bottomrule
+  \end{tabularx}
+\end{table}
+
+\begin{table}[!h]
+  \centering
+  \caption{Processi di produzione mesone $\pi$}
+  \begin{tabular}{>{$}l<{$}|>{$}c<{$}|>{$}r<{$}}
+	\toprule
+	p^+ + p^+ \rightarrow p^+ + p^+ + \pi^0 & n + p^+ \rightarrow n + p^+ +
+	\pi^0 & p^+ + n \rightarrow d + \pi^0\\
+    p^+ + p^+ \rightarrow p^+ + n + \pi^+ & n + p^+ \rightarrow p^+ + p^+ +
+	\pi^- & \gamma + p^+ \rightarrow p^+ + \pi^0\\
+    p^+ + p^+ \rightarrow d + \pi^+ & n + p^+ \rightarrow n + n + \pi^+ & \gamma
+	+ p^+ \rightarrow n + \pi^+\\
+	\bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[!h]
+  \centering
+  \caption{Processi di produzione degli iperoni}
+  \begin{tabular}{>{$}l<{$}|>{$}c<{$}|>{$}r<{$}}
+	\toprule
+	K^- + p^+ \rightarrow \pi^+ + \Sigma^- &K^- + p^+ \rightarrow \pi^0 +
+	\Sigma^0 &K^- + p^+ \rightarrow \pi^0 + \Sigma^+\\
+    K^- + p^+ \rightarrow K^+ + \Xi^- &K^- + p^+ \rightarrow K^0 + \Xi^0 &K^- + p^+
+	\rightarrow K^0 + \Omega^- + K^+ \\
+	\bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[!h]
+  \centering
+  \caption{Processi di decadimento (non leptonici) del mesone $K^+$}
+  \begin{tabular}{>{$}l<{$}|>{$}c<{$}|>{$}r<{$}}
+	\toprule
+  K^+ \rightarrow \pi^+ + \pi^0 & K^+ \rightarrow \pi^+ + \pi^+ + \pi^- & K^+
+  \rightarrow \pi^+ + \pi^0 + \pi^0\\
+	\bottomrule
+  \end{tabular}
+\end{table}
