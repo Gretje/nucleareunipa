@@ -21,11 +21,13 @@ Un generico vettore di questo spazio si indica con:
 
 \begin{equation}
  \ket{t}  \qquad \text{KET}
-\end{equation}%(nota dell'autore: "picciò non ho idea di come si faccia, spero sia venuto bene, ah e non so manco mettere le note!")
+\end{equation}%(nota dell'autore: "picciò non ho idea di come si faccia, 
+spero sia venuto bene, ah e non so manco mettere le note!")
 
 questo descrive lo stato del sistema all'istante $t$.
 Supponiamo ora che all'istante $t$ il sistema sia localizzato in un certo punto
-$p'$ (cioè la funzione d'onda è nulla in tutti i punti diversi da $p'$), quindi
+$p'$ (cioè la funzione d'onda è nulla in tutti i punti diversi da $p'$), 
+quindi
 si ha:
 
 \[
@@ -43,7 +45,9 @@ Per quanto detto un generico ket $\ket{t}$ si può esprimere in funzione della
 base ortogonale $\ket{\vec{r'},t}$, quindi le componenti $\phi_{p}(t)$  sono
 ortogonali e si ha che:
 \begin{equation}
-\int \psi^*_{p}(t)\psi_{p}(t) d^3\vec{r}= \int \psi^*(\vec{r},t)\psi(\vec{r},t)d^3\vec{r}%la formula è uguale a quella degli appunti...
+\int \psi^*_{p}(t)\psi_{p}(t) d^3\vec{r}= \int 
+\psi^*(\vec{r},t)\psi(\vec{r},t)d^3\vec{r}%la formula è uguale a quella degli 
+appunti...
 \end{equation}
 cioè il modulo quadro del vettore $\ket{t}$ è la somma (integrale) dei moduli
 quadri delle componenti.
@@ -91,7 +95,9 @@ all'istante $t$. Il generico $\ket{t}$
  si può esprimere in funzione della base, secondo la formula:
  
 \begin{equation}
-\ket{t}= \int{\psi_{p}\braket{\vec{r},t}d^3\vec{r}}=\int{\braket{\vec{r},t|t}}\ket{\vec{r},t}d^3\vec{r}
+\ket{t}= 
+\int{\psi_{p}\braket{\vec{r},t}d^3\vec{r}}=\int{\braket{\vec{r},t|t}}\ket{\vec{r
+},t}d^3\vec{r}
 \end{equation}
 
 Determiniamo quale condizione devono soddisfare i vettori di base affinché
@@ -107,20 +113,24 @@ da questa segue:
 \braket{\vec{r},t|\vec{r},t}=\delta^3(\vec{r}-\vec{r'})
 \end{empheq}
 
-Con questa posizione i vettori di base risultano automaticamente ortogonali, la $\delta^3$ si può esprimere nella forma fattorizzata:
+Con questa posizione i vettori di base risultano automaticamente ortogonali, la 
+$\delta^3$ si può esprimere nella forma fattorizzata:
 \begin{equation}
 \delta^3(\vec{r}-\vec{r'})=\delta(x-x')\delta(y-y')\delta(z-z')
 \end{equation}
 \breaknote
 
-Tutte \marginnote{3-12-1997} le grandezze osservabili sono rappresentate da operatori  \textit{hermitiani} che agiscono sui Ket.
-A questi operatori si associano matrici (anch'esse hermitiane) di dimensione infinita.
+Tutte \marginnote{3-12-1997} le grandezze osservabili sono rappresentate da 
+operatori  \textit{hermitiani} che agiscono sui Ket.
+A questi operatori si associano matrici (anch'esse hermitiane) di dimensione 
+infinita.
 
 Si ha che:
 \begin{equation}
 A\ket{t,1}=\ket{t,2}
 \end {equation}
-dove $A$ è l'operatore hermitiano e $\ket{t,1}$ e $\ket{t,2}$ sono due Ket le cui componenti sono:
+dove $A$ è l'operatore hermitiano e $\ket{t,1}$ e $\ket{t,2}$ sono due Ket le 
+cui componenti sono:
 \begin{align}
 \ket{t,1}&=\int\psi_{p}^{(1)}(t)\ket{\vec{r},t}d^3\vec{r}\\
 \ket{t,2}&=\int\psi_{p}^{(2)}(t)\ket{\vec{r},t}d^3\vec{r}
@@ -138,10 +148,14 @@ Per definizione si ha:
  \end{equation}
  
 Così definiti gli elementi di matrice sono relativi alla base.
-Quando si cambia base questi in genere cambiano. Se si prende come base quella degli autovalori di A allora l'espressione matriciale assume forma diagonale, con gli elementi reali. 
-In generale lo spettro degli autovalori di un operatore può essere sia discreto, sia continuo.
+Quando si cambia base questi in genere cambiano. Se si prende come base quella 
+degli autovalori di A allora l'espressione matriciale assume forma diagonale, 
+con gli elementi reali. 
+In generale lo spettro degli autovalori di un operatore può essere sia 
+discreto, sia continuo.
 \subsection{Spettro discreto}
-$a_{k}$ sia l'autovalore, $\ket{a_{k},t}$ sia il corrispondente autostato (per semplicità si assume che non vi sia degenerazione).
+$a_{k}$ sia l'autovalore, $\ket{a_{k},t}$ sia il corrispondente autostato (per 
+semplicità si assume che non vi sia degenerazione).
 
 Quindi, per definizione, si ha:
 
@@ -165,20 +179,23 @@ La quantità:
 \begin{equation}
 |\braket{a_{k},t|t}|^2=|c_{k}(t)|^2
 \end{equation}
-fornisce la probabilità che una misura della grandezza A fornisca il valore $a_{k}$ quando il sistema si trova nello stato$ \ket{t}$.
+fornisce la probabilità che una misura della grandezza A fornisca il valore 
+$a_{k}$ quando il sistema si trova nello stato$ \ket{t}$.
 
 La quantità:
 \begin{equation}
 \braket{t|A|t}     \qquad \textit{Valore medio o valore di aspettazione}
 \end{equation}
-si dice valore medio di A rispetto allo stato$\ket{t}$. Si verifica facilmente che:
+si dice valore medio di A rispetto allo stato$\ket{t}$. Si verifica facilmente 
+che:
 
 \begin{equation}
 \braket{t|A|t}=\sum_{k}|\braket{a_{k},t|t}|^2a_{k}= \sum_{k}|c_{k}|^2a_{k}
 \end{equation}
 
 \subsection{Spettro continuo}
-Sia $a$ l'autovalore e $\ket{a,t}$ il corrispondente autovettore. Un generico ket $\ket{t}$ si potrà scrivere come:
+Sia $a$ l'autovalore e $\ket{a,t}$ il corrispondente autovettore. Un generico 
+ket $\ket{t}$ si potrà scrivere come:
 
 \begin{equation}
 \ket{t}=\int\braket{a,t|t}\ket{a,t}da
@@ -192,7 +209,10 @@ Sia $a$ l'autovalore e $\ket{a,t}$ il corrispondente autovettore. Un generico ke
 |\braket{a,t|t}|^2=P(a)
 \end{equation}
 
-L'ultima quantità scritta rappresenta la densità di probabilità della distribuzione degli autovalori relativa allo stato $\ket{t}$. Cioè la probabilità di ottenere con una misura un valore compreso tra $a$e $a+da$ è data da $|\braket{a,t|t}|^2$.
+L'ultima quantità scritta rappresenta la densità di probabilità della 
+distribuzione degli autovalori relativa allo stato $\ket{t}$. Cioè la 
+probabilità di ottenere con una misura un valore compreso tra $a$e $a+da$ è 
+data da $|\braket{a,t|t}|^2$.
 
 \subsection{Spettro quasi continuo}
 Definiamo ora la situazione di spettro quasi continuo. Consideriamo un sistema
@@ -250,15 +270,18 @@ Ovviamente se si fa tendere $V$ ad infinito si deve avere:
 \begin{equation}
 \lim_{V\to\infty}|\braket{a_k,t|t}|^2\rho(a_k)\delta a_k = |\braket{a,t|t}|^2da
 \end{equation}
-L'utilità di questa approssimazione risulterà chiara quando si affronterà la teoria di Fermi.
+L'utilità di questa approssimazione risulterà chiara quando si affronterà la 
+teoria di Fermi.
 
 \subsection{Operatore coniugato Hermitiano}
-Sia $G$ un operatore lineare che agisce nello spazio di Hilbert. Si definisce $G^\dag$, \textit{operatore coniugato Hermitiano}, come:
+Sia $G$ un operatore lineare che agisce nello spazio di Hilbert. Si definisce 
+$G^\dag$, \textit{operatore coniugato Hermitiano}, come:
 
 \begin{gather}
 \braket{t,2|G^{\dag}|t,1}=(\braket{t,1|G|t,2})^*\\
 \ket{t,3}=G\ket{t,2}\\
-\braket{t,2|G^{\dag}|t,1}=(\braket{t,1|G|t,2})^*=(\braket{t,1|t,3})^*=\braket{t,3|t,1}
+\braket{t,2|G^{\dag}|t,1}=(\braket{t,1|G|t,2})^*=(\braket{t,1|t,3})^*=\braket{t,
+3|t,1}
 \end{gather}
 Quindi per $G^{\dag}$ e $G$ vale la proprietà:
 
@@ -266,7 +289,9 @@ Quindi per $G^{\dag}$ e $G$ vale la proprietà:
 \ket{t,3}=G\ket{t,2} \Longrightarrow \bra{t,3}=\bra{t,2}G^{\dag}
 \end{equation}
 
-Un operatore $G$ si dice \textit{Hermitiano} quando $G=G^{\dag}$. In questo caso se $\ket{g}$ è un autostato normalizzato di $G$ con autovalore $g$ si ha che:
+Un operatore $G$ si dice \textit{Hermitiano} quando $G=G^{\dag}$. In questo 
+caso se $\ket{g}$ è un autostato normalizzato di $G$ con autovalore $g$ si ha 
+che:
 
 \begin{equation}
 \braket{g|G|g}=g 
@@ -277,22 +302,29 @@ Un operatore $G$ si dice \textit{Hermitiano} quando $G=G^{\dag}$. In questo caso
 \end{equation}
 quindi gli autovalori di un operatore hermitiano sono tutti reali.
 
-Un operatore $G$ si dice \textit{unitario} quando $G=G^{\dag}$\footnote{Il testo riporta così: $G=G^{-1}$}. Un operatore unitario conserva i moduli dei ket. Infatti:
+Un operatore $G$ si dice \textit{unitario} quando $G=G^{\dag}$\footnote{Il 
+testo riporta così: $G=G^{-1}$}. Un operatore unitario conserva i moduli dei 
+ket. Infatti:
 
 \begin{equation}
 \braket{t|G^{\dag}G|t}=\braket{t|t}
 \end{equation}
 
-Nel caso in cui lo spazio di Hilbert sia relativo ad un sistema di $N$ particelle i ket si scrivono come:
+Nel caso in cui lo spazio di Hilbert sia relativo ad un sistema di $N$ 
+particelle i ket si scrivono come:
 
 \begin{equation}
-\ket{t}=\int\psi(\vec{r_1},\vec{r_2},\vec{r_3},...,\vec{r_N},t)\ket{\vec{r_1},\vec{r_2},\vec{r_3},...,\vec{r_N},t}d^3\vec{r_1}d^3\vec{r_2}...d^3\vec{r_n}
+\ket{t}=\int\psi(\vec{r_1},\vec{r_2},\vec{r_3},...,\vec{r_N},t)\ket{\vec{r_1},\v
+ec{r_2},\vec{r_3},...,\vec{r_N},t}d^3\vec{r_1}d^3\vec{r_2}...d^3\vec{r_n}
 \end{equation}
-dove si è posto $\ket{\vec{r_1},\vec{r_2},\vec{r_3},...,\vec{r_N},t}=\ket{\vec{r_1},t}\ket{\vec{r_2},t}...\ket{\vec{r_N},t}$.
+dove si è posto 
+$\ket{\vec{r_1},\vec{r_2},\vec{r_3},...,\vec{r_N},t}=\ket{\vec{r_1},t}\ket{\vec{
+r_2},t}...\ket{\vec{r_N},t}$.
 Il prodotto scalare si definisce come:
 
 \begin{equation}
-\braket{t|t}=\int\psi^N(\vec{r_1},\vec{r_2},...,\vec{r_N},t)\psi(\vec{r_1},\vec{r_2},...,\vec{r_N},t)d^3\vec{r_1}...d^3\vec{r_N}
+\braket{t|t}=\int\psi^N(\vec{r_1},\vec{r_2},...,\vec{r_N},t)\psi(\vec{r_1},\vec{
+r_2},...,\vec{r_N},t)d^3\vec{r_1}...d^3\vec{r_N}
 \end{equation}
 
 
@@ -332,7 +364,8 @@ Se applichiamo una trasformazione unitaria a tutti gli elementi delllo spazio di
 Hilbert si ottiene ad esempio una rappresentazione equivalente.
 Questa trasformazione unitaria si definisce come:
 \begin{equation}
-  U\ket{t}=\ket{\vec{t}}  \text{ e } \bra{t}U^{\dag}=\bra{\vec{t}} \quad \text{con} UU^{\dag}=U^{\dagger}U=1
+  U\ket{t}=\ket{\vec{t}}  \text{ e } \bra{t}U^{\dag}=\bra{\vec{t}} \quad 
+\text{con} UU^{\dag}=U^{\dagger}U=1
 \end{equation}
 Questa è una generica trasformazione unitaria. Definiamo:
 \begin{equation}
@@ -351,7 +384,9 @@ quindi:
 Se $A$ rappresenta una grandezza fisica e se $\ket{a_{k},t}$ è un suo autostato
 con autovalore $a_{k}$ allora si ha che:
 \begin{equation}
-  \vec{A}\ket{\overrightarrow{a_{k}t}}=U(A\ket{a_{k}t})=a_{k}\ket{\overrightarrow{a_{k}t}}
+  
+\vec{A}\ket{\overrightarrow{a_{k}t}}=U(A\ket{a_{k}t})=a_{k}\ket{\overrightarrow{
+a_{k}t}}
 \end{equation}
 Quindi la trasformazione $U$ lascia invariati gli autovalori, e l'autostato di
 $\vec{A}$ è il trasformato dell'autostato di $A$. Dal momento che:
@@ -383,7 +418,8 @@ T(t,t_{0})=\exp\left\{-\frac{i}{\hslash}H(t-t_{0})\right\}
 se $H$ è hermitiano allora $T$ risulta unitario. In queste ipotesi si conserva
 la probabilità, infatti:
 \begin{equation}
-\braket{t|t}=\braket{t_{0}|T^{\dag}(t,t_{0})T(t,t_{0})|t_{0}}=\braket{t_{0}|t_{0}}
+\braket{t|t}=\braket{t_{0}|T^{\dag}(t,t_{0})T(t,t_{0})|t_{0}}=\braket{t_{0}|t_{0
+}}
 \end{equation}
 nel caso quasi stazionario di un sitema che decade $H$ non è hermitiano, in
 quanto ha autovalori complessi. In questo caso $T$ non è più unitario e non è
@@ -446,14 +482,17 @@ Derivando rispetto al tempo:
 
 \begin{equation}
 \begin{split}
-\frac{d}{dt}\ket{t}=\int \frac{\partial}{\partial t}\psi_{p}(t)\ket{\vec{r}}d^{3}\vec{r}\\
-\frac{d}{dt}[A\ket{t}]=\int\frac{\partial}{\partial t} \psi^{I}_{p}(t)\ket{\vec{r}}d^{3}\vec{r}
+\frac{d}{dt}\ket{t}=\int \frac{\partial}{\partial 
+t}\psi_{p}(t)\ket{\vec{r}}d^{3}\vec{r}\\
+\frac{d}{dt}[A\ket{t}]=\int\frac{\partial}{\partial t} 
+\psi^{I}_{p}(t)\ket{\vec{r}}d^{3}\vec{r}
 \end{split}
 \end{equation}
 dove si ha che:
 
 \begin{equation}
-\frac{\partial}{\partial t} \psi^{I}_{p}(t)=\int A_{pp^{I}} \frac{\partial}{\partial t} \psi_{p^{I}}(t)d^{3} \vec{r}
+\frac{\partial}{\partial t} \psi^{I}_{p}(t)=\int A_{pp^{I}} 
+\frac{\partial}{\partial t} \psi_{p^{I}}(t)d^{3} \vec{r}
 \end{equation}
 Da tutto questo segue che:
 
@@ -461,7 +500,8 @@ Da tutto questo segue che:
 \frac{d}{dt}[A\ket{t}]=A\frac{d}{dt}\ket{t} \rightarrow \frac{d}{dt}A=0
 \end{gather}
 
-Tutto questo è stato valutato nella rappresentazione di Schr\"{o}dinger. Vediamo
+Tutto questo è stato valutato nella rappresentazione di Schr\"{o}dinger. 
+Vediamo
 ora cosa succede nella rappresentazione di Heisenberg:
 
 \begin{gather}
@@ -473,7 +513,8 @@ Valutiamo ora la derivata totale rispetto al tempo:
 \begin{equation}
 \begin{split}
 \frac{d}{dt}A_{\mathscr{H}} &
-=\left(\frac{d}{dt}T^{\dagger}\right)AT+T^{\dagger}A\left(\frac{d}{dt}T\right) \\
+=\left(\frac{d}{dt}T^{\dagger}\right)AT+T^{\dagger}A\left(\frac{d}{dt}T\right) 
+\\
 & = \frac{i}{\hslash}HT^{\dagger}AT-\frac{i}{\hslash}T^{\dagger}ATH \\
 & = -\frac{i}{\hslash}(A_{\mathscr{H}}H-HA_{\mathscr{H}}) \\
 & = -\frac{i}{\hslash}[A_{\mathscr{H}},H]
@@ -484,7 +525,8 @@ Quindi l'operatore $A_{\mathscr{H}}$ verifica l'equazione:
 \begin{empheq}[box=\fbox]{equation}
 i\hslash \frac{d}{dt}A_\mathscr{H}=[A_\mathscr{H},H]
 \end{empheq}
-Questa vale nell'ipotesi che $\frac{\partial A}{\partial t}=0$. Se $A=H$ si ottiene che:
+Questa vale nell'ipotesi che $\frac{\partial A}{\partial t}=0$. Se $A=H$ si 
+ottiene che:
 
 \begin{gather}
 A_\mathscr{H}=H_\mathscr{H}=T^{\dag}HT=T^{\dag}TH=H\rightarrow H_\mathscr{H}=H
@@ -497,19 +539,26 @@ Quindi anche nel sistema di Heisenberg:
 \end{equation}
 se $\frac{\partial}{\partial t}H_\mathscr{H}=0$.
 
-Il fatto che in questa rappresentazione lo stato di un sistema rimane costante implica che sono i vettori di base a variare nel tempo:
+Il fatto che in questa rappresentazione lo stato di un sistema rimane costante 
+implica che sono i vettori di base a variare nel tempo:
 
 \begin{equation}
 \begin{split}
-\ket{\vec{r},t}_\mathscr{H} & =T^{\dag}(t,t_0)\ket{\vec{r}} \rightarrow \frac{d}{dt}\ket{\vec{r},t}_\mathscr{H} \\
+\ket{\vec{r},t}_\mathscr{H} & =T^{\dag}(t,t_0)\ket{\vec{r}} \rightarrow 
+\frac{d}{dt}\ket{\vec{r},t}_\mathscr{H} \\
 & = \frac{d}{dt}T^{\dag}\ket{r} = \frac{i}{\hslash}H\ket{\vec{r},t}_\mathscr{H}
 \end{split}
 \end{equation}
 
-Quindi i vettori $\ket{\vec{r} ,t}_\mathscr{H}$ variano nel tempo in modo esattamente opposto a come variano nel tempo i vettori nella rappresentazione di Schr\"{o}dinger.
+Quindi i vettori $\ket{\vec{r} ,t}_\mathscr{H}$ variano nel tempo in modo 
+esattamente opposto a come variano nel tempo i vettori nella rappresentazione 
+di Schr\"{o}dinger.
 
-\textit{In una qualsiasi rappresentazione vale sempre che} $\frac{\partial A}{\partial t}=0 \leftrightarrow \frac{d}{dt}A$. Nel caso della rappresentazione di Heisenberg si
- valuta $\frac{d}{dt}A_\mathscr{H}$ con l'ipotesi che sia $\frac{\partial A}{\partial t}=0 $ e non $\frac{\partial A_\mathscr{H}}{\partial t}=0 $.
+\textit{In una qualsiasi rappresentazione vale sempre che} $\frac{\partial 
+A}{\partial t}=0 \leftrightarrow \frac{d}{dt}A$. Nel caso della 
+rappresentazione di Heisenberg si
+ valuta $\frac{d}{dt}A_\mathscr{H}$ con l'ipotesi che sia $\frac{\partial 
+A}{\partial t}=0 $ e non $\frac{\partial A_\mathscr{H}}{\partial t}=0 $.
  
 \section{Rappresentazione di interazione}
 Questa rappresentazione è molto usata nella fisica delle particelle elementari.
@@ -518,7 +567,8 @@ Consideriamo un generico sistema la cui Hamiltoniana viene posta nella forma:
 \begin{equation}
 H=H_{0}+H_\text{int}
 \end{equation}
-dove $H_0$ è il termine non perturbato e $H_\text{int}$ il termine di interazione. La
+dove $H_0$ è il termine non perturbato e $H_\text{int}$ il termine di 
+interazione. La
 rappresentazione di interazione si ricava da quella di Schr\"{o}dinger
 considerando la trasformazione unitaria:
 
@@ -547,9 +597,12 @@ si ha:
 \begin{equation}
 \begin{split}
                       i\hslash \frac{\partial}{\partial t}\ket{t} &= H\ket{t} \\
-               i\hslash \frac{\partial}{\partial t}(T_0\ket{t}_I) &= HT_0\ket{t}_I \\
-HT_0\ket{t}_I + i\hslash T_0 \frac{\partial}{\partial t}\ket{t}_I &= (H_0+H_\text{int})T_0\ket{t}_I \\
-                i\hslash T_0 \frac{\partial}{\partial t}\ket{t}_I &= H_\text{int}T_0\ket{t}_I \\
+               i\hslash \frac{\partial}{\partial t}(T_0\ket{t}_I) &= 
+HT_0\ket{t}_I \\
+HT_0\ket{t}_I + i\hslash T_0 \frac{\partial}{\partial t}\ket{t}_I &= 
+(H_0+H_\text{int})T_0\ket{t}_I \\
+                i\hslash T_0 \frac{\partial}{\partial t}\ket{t}_I &= 
+H_\text{int}T_0\ket{t}_I \\
 \end{split}
 \end{equation}
 e infine:
@@ -582,7 +635,8 @@ i\hslash \frac{\partial}{\partial t} A_I & = i\hslash \frac{\partial}{\partial
 t}\left(e^{\frac{i}{\hslash}H_0(t-t_0)}Ae^{-\frac{i}{\hslash}H_0(t-t_0)}\right)=
 \\
 & =
-i\hslash\left(\frac{i}{\hslash}H_0T_{0}^{\dag}AT_0-T_{0}^{\dag}A\frac{i}{\hslash}H_0T_0
+i\hslash\left(\frac{i}{\hslash}H_0T_{0}^{\dag}AT_0-T_{0}^{\dag}A\frac{i}{\hslash
+}H_0T_0
 \right)= \\
 & = -H_0A_I+A_IH_0= \\
 & = [A_I,H_0]
@@ -606,11 +660,13 @@ indipendenti dal tempo in quanto si possono considerare imperturbati, cioè sono
 autostati di $H_0$. Lo stato del sistema risulterà dipendente dal tempo solo
 nell' intervallo di tempo in cui avverrà la transizione da $\ket{i}_I$  a
 $\ket{f}_I$, ma questa transizione avviene ad opera di $H_\text{int}$, dunque
-soltanto nel breve periodo della transizione $H_{int_{I}}$ può risultare diversa
+soltanto nel breve periodo della transizione $H_{int_{I}}$ può risultare 
+diversa
 da zero.
 
 \section{Momento angolare}
-Il momento angolare in meccanica quantistica è un operatore vettoriale $\vec{J}=
+Il momento angolare in meccanica quantistica è un operatore vettoriale 
+$\vec{J}=
 (J_x, J_y, J_z)$ le cui componenti verificano le seguenti regole di
 commutazione:
 
@@ -664,8 +720,10 @@ m_j\hslash
 \end{equation}
 con $m_j=-j,-j+1,\dots,j-1,j$. Quindi il valore massimo che può avere $J_z$ è
 $j\hslash$ e si  vede che il modulo quadro di $\vec{J}$ è più grande del
-quadrato di $J_Z=j^2\hslash^2<j(j+1)\hslash^2$. Questo è conseguenza del fatto che
-non può esistere uno stato del sistema in cui una delle componenti assume valore
+quadrato di $J_Z=j^2\hslash^2<j(j+1)\hslash^2$. Questo è conseguenza del fatto 
+che
+non può esistere uno stato del sistema in cui una delle componenti assume 
+valore
 massimo mentre le altre due assumono valore nullo.
 
 Quindi supponendo che lo stato sia un autostato di $J_z$ quello con valore
@@ -699,7 +757,8 @@ m_j=-j,-j+1,\dots,j
 \end{equation}
 
 Quindi fissato $j$ il numero di autovalori corrispondenti di $J_z$ è $2j+1$
-(questo sia per $j$ intero che semi-intero), ovviamente $2j+1$ è anche il numero
+(questo sia per $j$ intero che semi-intero), ovviamente $2j+1$ è anche il 
+numero
 degli autostati
 $\ket{m_j}$. Questi costituiscono una base degli stati con momento angolare $J$
 fissato.
@@ -730,7 +789,8 @@ J_z(J_+\ket{m_j}) &= (\hslash J_++J_+J_z)\ket{m_j}=\\
 \end{equation}
 
 Quindi lo stato $J_+\ket{m_j}$ è uno autostato di $J_z$ con autovalore $\hslash
-(m_j+1)$. Analogamente si dimostra che lo stato $J_-\ket{m_j}$ è un autostato di
+(m_j+1)$. Analogamente si dimostra che lo stato $J_-\ket{m_j}$ è un autostato 
+di
 $J_z$ con autovalore $\hslash(m_j-1)$. Quindi si può scrivere che:
 
 \begin{gather}

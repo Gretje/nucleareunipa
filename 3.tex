@@ -2,18 +2,21 @@
 \chapter{Proprietà dei nuclei atomici}
 \section{Distribuzione di carica del nucleo}
 \subsection{Formula di Saxon}
-Supponiamo \marginnote{19-01-1998} che la distribuzione $\rho{(\vec{r})}$ sia diversa da 0 solo nei punti in cui è verificata la relazione:
+Supponiamo \marginnote{19-01-1998} che la distribuzione $\rho{(\vec{r})}$ sia 
+diversa da 0 solo nei punti in cui è verificata la relazione:
 \begin{equation}
 \vec{q} \cdot \vec{r} \ll 1
 \end{equation}
 in questo caso si può espandere la funzione $e^{i\vec{q} \cdot \vec{r}}$ in
 serie di potenze. L'integrale, da $F{(\vec{q})}$, diventa quindi:
 \begin{equation}
-F{(\vec{q})} = \int \rho{(\vec{r})} \left[ 1 + i\vec{q} \cdot \vec{r} - \frac{1}{2!}(\vec{q} \cdot \vec{r})^2 + ... \right] d^3\vec{r}
+F{(\vec{q})} = \int \rho{(\vec{r})} \left[ 1 + i\vec{q} \cdot \vec{r} - 
+\frac{1}{2!}(\vec{q} \cdot \vec{r})^2 + ... \right] d^3\vec{r}
 \end{equation}
 Se ci si ferma fino al termine del secondo ordine si ha:
 \begin{equation}
-F{(\vec{q})} = 1 + i\int \rho{(\vec{r})}(\vec{q} \cdot \vec{r}) d^3\vec{r} - \frac{1}{2} \int \rho{(\vec{r})}(\vec{q} \cdot \vec{r})^2 d^3\vec{r}
+F{(\vec{q})} = 1 + i\int \rho{(\vec{r})}(\vec{q} \cdot \vec{r}) d^3\vec{r} - 
+\frac{1}{2} \int \rho{(\vec{r})}(\vec{q} \cdot \vec{r})^2 d^3\vec{r}
 \end{equation}
 e nell'ipotesi che la distribuzione $\rho$ abbia la proprietà:
 \begin{equation}
@@ -23,21 +26,26 @@ che è verificata ad esempio se $\rho$ ha simmetria sferica, allora il primo
 integrale si annulla. Indichiamo con $r_q$ la componente di $\vec{r}$ nella
 direzione di $\vec{q}$, cioè $r_q q = \vec{r} \cdot \vec{q}$. Si ha:
 \begin{equation}
-\int \rho{(\vec{r})}(\vec{q} \cdot \vec{r})^2 d^3\vec{r} = q^2 \int \rho{(r)} r_q^2  d^3\vec{r} = \frac{1}{3} q^2 \int \rho{(r)} \vec{r}^2 d^3\vec{r}
+\int \rho{(\vec{r})}(\vec{q} \cdot \vec{r})^2 d^3\vec{r} = q^2 \int \rho{(r)} 
+r_q^2  d^3\vec{r} = \frac{1}{3} q^2 \int \rho{(r)} \vec{r}^2 d^3\vec{r}
 \end{equation}
 L'ultimo passaggio è giustificato dal fatto che, data la simmetria sferica, si
 ha:
 \begin{equation}
-\int \rho{(r)} r_i^2 d^3\vec{r} = \int \rho{(r)} r_q^2 d^3\vec{r} \qquad [r_i (i = x,y,z)]
+\int \rho{(r)} r_i^2 d^3\vec{r} = \int \rho{(r)} r_q^2 d^3\vec{r} \qquad [r_i 
+(i = x,y,z)]
 \end{equation}
 \begin{equation}
-\int \rho{(r)} \vec{r}^2 d^3\vec{r} = \sum_{i=1}^3 \int \rho{(r)} r_i^2 d^3\vec{r} = 3 \int \rho{(r)} r_q^2 d^3\vec{r}
+\int \rho{(r)} \vec{r}^2 d^3\vec{r} = \sum_{i=1}^3 \int \rho{(r)} r_i^2 
+d^3\vec{r} = 3 \int \rho{(r)} r_q^2 d^3\vec{r}
 \end{equation}
 Quindi, sotto l'ipotesi di una $\rho{(\vec{r})}$ con simmetria sferica si ha:
 \begin{equation}
-F{(\vec{q})} = 1 - \frac{1}{6} q^2 \int \vec{r}^2 \rho{(r)}  d^3\vec{r} + ... = 1 - \frac{1}{6} q^2 \left \langle \vec{r}^2 \right \rangle + ...
+F{(\vec{q})} = 1 - \frac{1}{6} q^2 \int \vec{r}^2 \rho{(r)}  d^3\vec{r} + ... = 
+1 - \frac{1}{6} q^2 \left \langle \vec{r}^2 \right \rangle + ...
 \end{equation}
-Da questa si vede che da $F{(q)}$ si può risalire ad una stima di $\left \langle
+Da questa si vede che da $F{(q)}$ si può risalire ad una stima di $\left 
+\langle
 \vec{r}^2 \right \rangle$. In realtà non è così semplice determinare la forma
 della funzione $F{(q)}$. Per determinare poi $\rho$ si procede per tentativi,
 cioè si ipotizza una particolare $\rho{(r)}$ e si confrontano poi i fattori di
@@ -74,29 +82,35 @@ momento che i nuclei sono costituiti da particelle (protoni e neutroni) di spin
 $\frac{1}{2}$ si hanno:
 \begin{equation} \begin{split}
 \text{Bosoni}& \Rightarrow \text{Numero di massa pari \qquad(Spin} = n\hbar);\\
-\text{Fermioni}& \Rightarrow \text{Numero di massa dispari \qquad(Spin} = \frac{2n+1}{2}\hbar);
+\text{Fermioni}& \Rightarrow \text{Numero di massa dispari \qquad(Spin} = 
+\frac{2n+1}{2}\hbar);
 \end{split}\end{equation}
-L'interazione elettromagnetica dovuta allo spin del nucleo genera nell'atomo la struttura iperfine. Si ha che:
+L'interazione elettromagnetica dovuta allo spin del nucleo genera nell'atomo la 
+struttura iperfine. Si ha che:
 \begin{equation}
 \vec{\mu}_I = \frac{g_I \mu_N \vec{I}} {\hbar}
 \end{equation}
 dove:
 \begin{itemize}
 \item[$g_I$]= Fattore $g$ nucleare;
-\item[$\mu _N$]= Magnetone $(?)$ nucleare = $\frac{e\hbar}{2m_pc} \simeq 0.5050823 \times 10^{-23}$ erg/gauss;
+\item[$\mu _N$]= Magnetone $(?)$ nucleare = $\frac{e\hbar}{2m_pc} \simeq 
+0.5050823 \times 10^{-23}$ erg/gauss;
 \item[$\vec{I}$]= Spin del nucleo;
 \end{itemize}
 Si usa anche la scrittura:
 \begin{equation}
-\vec{\mu}_I =  \gamma_I \vec{I} \qquad \text{con}\ \gamma_I = \frac{g_I \mu_N}{\hbar}\ \text{(Rapporto giromagnetico nucleare)}
+\vec{\mu}_I =  \gamma_I \vec{I} \qquad \text{con}\ \gamma_I = \frac{g_I 
+\mu_N}{\hbar}\ \text{(Rapporto giromagnetico nucleare)}
 \end{equation}
 ovviamente $g_I$ e $\gamma_I$ sono grandezze equivalenti.
 
 Analizziamo ora il meccanismo dinamico che genera la struttura iperfine
-dell'atomo. La presenza di $\mu_I$ implica che se c'è un campo magnetico esterno
+dell'atomo. La presenza di $\mu_I$ implica che se c'è un campo magnetico 
+esterno
 $H$, si ha un'energia potenziale:
 \begin{equation}
-W_m = -\vec{\mu}_I \cdot \vec{H} \qquad \Rightarrow \qquad \left \langle W_m \right \rangle = -\left \langle \vec{\mu}_I \cdot \vec{H} \right \rangle
+W_m = -\vec{\mu}_I \cdot \vec{H} \qquad \Rightarrow \qquad \left \langle W_m 
+\right \rangle = -\left \langle \vec{\mu}_I \cdot \vec{H} \right \rangle
 \end{equation}
 Supponiamo che si abbia un nucleo in un atomo con un singolo elettrone di
 valenza. Quindi $H$ è solo il campo generato da questo elettrone di valenza in
@@ -114,7 +128,9 @@ valenza, cioè:
 \end{equation}
 Si avrà quindi uno splitting di energia pari a:
 \begin{equation}
-\Delta W = \left \langle W_m \right \rangle = -\left \langle \vec{\mu}_I \vec{H}{(0)} \right \rangle = -\gamma_I \frac{H{(0)}}{j \hbar} \left \langle \vec{I} \vec{J} \right \rangle
+\Delta W = \left \langle W_m \right \rangle = -\left \langle \vec{\mu}_I 
+\vec{H}{(0)} \right \rangle = -\gamma_I \frac{H{(0)}}{j \hbar} \left \langle 
+\vec{I} \vec{J} \right \rangle
 \end{equation}
 L'Hamiltoniana totale $\mathcal{H}$ commuta con $W_m$, ed anche $I^2$ e $J^2$
 commutano con $W_m$, cioè:
@@ -124,7 +140,8 @@ commutano con $W_m$, cioè:
 \left [ J^2, W_m \right ] = 0
 \end{split}\end{equation}
 (Se consideriamo un atomo idrogenoide nell'Hamiltoniana totale ci sono i termini
-$P^{2}/2m$\footnote{È indecifrabile questa parte}, $L^2$, $\vec{L} \cdot \vec{S}$
+$P^{2}/2m$\footnote{È indecifrabile questa parte}, $L^2$, $\vec{L} \cdot 
+\vec{S}$
 dove $L$ e $S$ sono relativi all'elettrone. Si può verificare che ciascuno di
 questi termini commuta con $\vec{I} \cdot \vec{J}$, $I^2$ e $J^2$).
 
@@ -133,7 +150,9 @@ Mentre invece:
 \left [ I_Z, W_m \right ] \ne 0\\
 \left [ J_Z, W_m \right ] \ne 0
 \end{split}\end{equation}
-Quindi invece lo spin del nucleo e il momento angolare totale dell'elettrone si conserveranno in modulo ma non in direzione. Invece si conserverà il momento angolare totale dell'atomo:
+Quindi invece lo spin del nucleo e il momento angolare totale dell'elettrone si 
+conserveranno in modulo ma non in direzione. Invece si conserverà il momento 
+angolare totale dell'atomo:
 \begin{equation}
 \vec{F} = \vec{I} + \vec{J}
 \end{equation}
@@ -153,7 +172,9 @@ precessione attorno alla direzione di $\left \langle F \right \rangle$
 Abbiamo \marginnote{21-01-1998} visto che lo spostamento di energia in presenza
 di un campo magnetico è:
 \begin{equation}
-\Delta W = \left \langle W_m \right \rangle = -\left \langle \vec{\mu}_I \cdot \vec{H}{(0)} \right \rangle = -\gamma_I \frac{H{(0)}}{j \hbar} \left \langle \vec{I} \cdot \vec{J} \right \rangle
+\Delta W = \left \langle W_m \right \rangle = -\left \langle \vec{\mu}_I \cdot 
+\vec{H}{(0)} \right \rangle = -\gamma_I \frac{H{(0)}}{j \hbar} \left \langle 
+\vec{I} \cdot \vec{J} \right \rangle
 \end{equation}
 Calcoliamo quindi questo valore medio:
 \begin{equation}
@@ -186,7 +207,8 @@ del numero quantico di spin nucleare $i$. Per esempio, se si osservano un numero
 di righe spettrali $N < 2j + 1$
 allora deve essere $i < j$ e $N = 2i + 1$. Quindi dalla semplice conoscenza di
 $N$ si ricava $i = \frac{1}{2} (N-1)$. Quando invece risulta $N = 2j + 1$ le
-cose risultano un pò più complicate. In questo caso si può avere per $i:\ i \ge
+cose risultano un pò più complicate. In questo caso si può avere per $i:\ i 
+\ge
 j$. Il valore di $i$ si può ricavare utilizzando la regola degli intervalli:
 \begin{equation}
 f: \begin{cases}
@@ -198,21 +220,37 @@ f_3 = i + j-2\qquad & \rightarrow \qquad W_3 = W + \Delta W_3\\
 \end{equation}
 Si ha che:
 \begin{equation}\begin{split}
-\frac{W_1-W_2}{W_2-W_3} = &\frac{\Delta W_1 - \Delta W_2}{\Delta W_2 - \Delta W_3} =\frac{f_1(f_1+1) - f_2(f_2+1)}{f_2(f_2+1) - f_3(f_3+1)} =\\\\
-= &\frac{f_1(f_1+1) - f_2f_1}{f_2(f_2+1)-f_3f_2} = \frac{f_1 \left [f_1 + 1 - f_2 \right ]}{f_2 \left [f_2 + 1 - f_3 \right ]} = \frac{f_1}{f_2}
+\frac{W_1-W_2}{W_2-W_3} = &\frac{\Delta W_1 - \Delta W_2}{\Delta W_2 - \Delta 
+W_3} =\frac{f_1(f_1+1) - f_2(f_2+1)}{f_2(f_2+1) - f_3(f_3+1)} =\\\\
+= &\frac{f_1(f_1+1) - f_2f_1}{f_2(f_2+1)-f_3f_2} = \frac{f_1 \left [f_1 + 1 - 
+f_2 \right ]}{f_2 \left [f_2 + 1 - f_3 \right ]} = \frac{f_1}{f_2}
 \end{split}\end{equation}
-Questo risultato può essere generalizzato scrivendo per esteso la \textit{Regola degli intervalli}:
+Questo risultato può essere generalizzato scrivendo per esteso la 
+\textit{Regola degli intervalli}:
 \begin{empheq}[box=\fbox]{equation}
-\frac{W_{\alpha} - W_{\alpha + 1}}{W_{\alpha + 1} - W_{\alpha + 2}} = \frac{f_{\alpha}}{f_{\alpha + 1}}
+\frac{W_{\alpha} - W_{\alpha + 1}}{W_{\alpha + 1} - W_{\alpha + 2}} = 
+\frac{f_{\alpha}}{f_{\alpha + 1}}
 \end{empheq}
-Questo rapporto può essere valutato sperimentalmente, dalla conoscenza di $\frac{f_{\alpha}}{f_{\alpha + 1}}$ e $j$ si può arrivare alla determinazione di $i$. La regola degli intervalli è utile anche per determinare l'aderenza del modello teorico con la realtà. La deviazione di piccoli scarti dalla regola degli intervalli portò alla scoperta del momento di quadrupolo del nucleo.
+Questo rapporto può essere valutato sperimentalmente, dalla conoscenza di 
+$\frac{f_{\alpha}}{f_{\alpha + 1}}$ e $j$ si può arrivare alla determinazione 
+di $i$. La regola degli intervalli è utile anche per determinare l'aderenza 
+del modello teorico con la realtà. La deviazione di piccoli scarti dalla 
+regola degli intervalli portò alla scoperta del momento di quadrupolo del 
+nucleo.
 
-Quanto detto fin'ora può essere generalizzato ad atomi con più elettroni di valenza, basta porre $\vec{J}$ uguale al momento totale degli elettroni e considerare in $\vec{H}$ anche il contributo degli altri elettroni.
-Le misure di $i$ non portano ad una determinazione univoca di $\vec{\mu}_I$ in quanto resta da misurare il rapporto giromagnetico nucleare $\gamma_I = g_I \frac{\mu_N}{\hbar}$. 
+Quanto detto fin'ora può essere generalizzato ad atomi con più elettroni di 
+valenza, basta porre $\vec{J}$ uguale al momento totale degli elettroni e 
+considerare in $\vec{H}$ anche il contributo degli altri elettroni.
+Le misure di $i$ non portano ad una determinazione univoca di $\vec{\mu}_I$ in 
+quanto resta da misurare il rapporto giromagnetico nucleare $\gamma_I = g_I 
+\frac{\mu_N}{\hbar}$. 
 
 \subsection{Rapporto giromagnetico nucleare}
-Il metodo più semplice per determinare $g_I$ è quello di considerare un campo magnetico esterno uniforme che sia tanto grande da poter trascurare l'interazione con gli elettroni.
-Se $\vec{H}$ è diretto lungo l'asse $\hat{z}$, l'Hamiltoniana di interazione è:
+Il metodo più semplice per determinare $g_I$ è quello di considerare un campo 
+magnetico esterno uniforme che sia tanto grande da poter trascurare 
+l'interazione con gli elettroni.
+Se $\vec{H}$ è diretto lungo l'asse $\hat{z}$, l'Hamiltoniana di interazione 
+è:
 \begin{equation}
 \mathcal{H}_{int} = - \vec{\mu}_I \vec{H}_\text{est} = - \gamma_I I_z H_z
 \end{equation}
@@ -222,60 +260,85 @@ e l'Hamiltoniana totale del nucleo, si può scrivere dunque come:
 \end{equation}
 Ovviamente si avrà che:
 \begin{equation}
-\left [ \mathcal{H}_0, \vec{I} \right ] = 0; \qquad \left [ \mathcal{H}, I_z \right ] = 0
+\left [ \mathcal{H}_0, \vec{I} \right ] = 0; \qquad \left [ \mathcal{H}, I_z 
+\right ] = 0
 \end{equation}
 Il nucleo, in questa situazione subirà l'\textit{effetto Zeeman}, cioè:
 \begin{equation}
-\Delta W_\text{nucl} = - \gamma_I m_I H_\text{est} \hbar \qquad \text{con}\ m_I = \text{$i$, $i-1$, ..., $-i$}
+\Delta W_\text{nucl} = - \gamma_I m_I H_\text{est} \hbar \qquad \text{con}\ m_I 
+= \text{$i$, $i-1$, ..., $-i$}
 \end{equation}
 
 Si formeranno $2i+1$ sottolivelli di energia del nucleo e l'energia di ciascun
 sottolivello sarà caratterizzata solo da $m_I$.
 
 Se si fa passare il nucleo da un sottolivello ad un altro adiacente si può
-misurare $\gamma_I$. Infatti nella transazione il nucleo emetterà (o assorbirà)
+misurare $\gamma_I$. Infatti nella transazione il nucleo emetterà (o 
+assorbirà)
 un quanto di energia pari a:
 \begin{equation}\begin{split}
-h \nu &= \left| - \gamma_I(m_I + 1) H_\text{est} \hbar + \gamma_I m_I H_\text{est} \hbar \right| = \gamma_I H_\text{est} \hbar \\
+h \nu &= \left| - \gamma_I(m_I + 1) H_\text{est} \hbar + \gamma_I m_I 
+H_\text{est} \hbar \right| = \gamma_I H_\text{est} \hbar \\
 \nu &= \frac{1}{2\pi} \left| \gamma_I \right| H_\text{est}
 \end{split}\end{equation}
-Dalla frequenza $\nu$ della radiazione emessa (o assorbita) e da $H_\text{est}$ si può quindi ricavare $\left| \gamma_I \right|$. La frequenza $\nu$ coincide con la \textit{frequenza di Larmor} con cui precessa $\left\langle \vec{I} \right\rangle$ attorno alla direzione di $\vec{H}_\text{est}$. Per ricavare questo risultato basta usare un modello classico.
+Dalla frequenza $\nu$ della radiazione emessa (o assorbita) e da $H_\text{est}$ 
+si può quindi ricavare $\left| \gamma_I \right|$. La frequenza $\nu$ coincide 
+con la \textit{frequenza di Larmor} con cui precessa $\left\langle \vec{I} 
+\right\rangle$ attorno alla direzione di $\vec{H}_\text{est}$. Per ricavare 
+questo risultato basta usare un modello classico.
 
-Supponiamo di avere un campo magnetico $H_\text{est}$ in cui è presente un giroscopio caratterizzato da:
+Supponiamo di avere un campo magnetico $H_\text{est}$ in cui è presente un 
+giroscopio caratterizzato da:
 \begin{equation}
-\vec{I}^{ce} = \left\langle \vec{I} \right\rangle; \qquad \vec{\mu}_I^{cl} = \left\langle \vec{\mu}_I \right\rangle = \gamma_I \vec{I}^{cl}
+\vec{I}^{ce} = \left\langle \vec{I} \right\rangle; \qquad \vec{\mu}_I^{cl} = 
+\left\langle \vec{\mu}_I \right\rangle = \gamma_I \vec{I}^{cl}
 \end{equation}
 Questo giroscopio sarà soggetto ad un momento meccanico:
 \begin{equation}
-\vec{\tau} = \frac{d}{dt}\vec{I}^{cl} = \vec{\mu}_I^{cl} \wedge \vec{H}_\text{est} = \gamma_I \vec{I}^{cl} \wedge \vec{H}_\text{est}
+\vec{\tau} = \frac{d}{dt}\vec{I}^{cl} = \vec{\mu}_I^{cl} \wedge 
+\vec{H}_\text{est} = \gamma_I \vec{I}^{cl} \wedge \vec{H}_\text{est}
 \end{equation}
 si avrà quindi:
 \begin{equation}\begin{split}
-\frac{d}{dt} (\vec{I}^{cl})^{2} = 2 \vec{I}^{cl} \cdot \frac{d}{dt} \vec{I}^{cl} = 0 \qquad &\Rightarrow \qquad (\vec{I}^{cl})^{2} = \text{costante}\\
-\frac{d}{dt} (\vec{H}_\text{est} \cdot \vec{I}^{cl}) = \vec{H}_\text{est} \cdot \frac{d}{dt} \vec{I}^{cl} = 0 \qquad \Rightarrow \qquad \vec{I}^{cl} \cdot \vec{H}_\text{est} = \text{costante} \qquad &\Rightarrow \qquad I_z^{cl} = \text{costante}
+\frac{d}{dt} (\vec{I}^{cl})^{2} = 2 \vec{I}^{cl} \cdot \frac{d}{dt} 
+\vec{I}^{cl} = 0 \qquad &\Rightarrow \qquad (\vec{I}^{cl})^{2} = 
+\text{costante}\\
+\frac{d}{dt} (\vec{H}_\text{est} \cdot \vec{I}^{cl}) = \vec{H}_\text{est} \cdot 
+\frac{d}{dt} \vec{I}^{cl} = 0 \qquad \Rightarrow \qquad \vec{I}^{cl} \cdot 
+\vec{H}_\text{est} = \text{costante} \qquad &\Rightarrow \qquad I_z^{cl} = 
+\text{costante}
 \end{split}\end{equation}
-Quindi il vettore $\vec{I}^{cl}$ sarà soggetto ad un moto di precessione attorno all'asse $\hat{z}$. Se $\gamma_I$ è positivo la rotazione sarà in senso orario. Quindi:
+Quindi il vettore $\vec{I}^{cl}$ sarà soggetto ad un moto di precessione 
+attorno all'asse $\hat{z}$. Se $\gamma_I$ è positivo la rotazione sarà in 
+senso orario. Quindi:
 \begin{equation}
 \begin{split}
-\left| \frac{d}{dt} \vec{I}^{cl} \right| &= - \gamma_I I^{cl}H_\text{est} \sin \theta\\
+\left| \frac{d}{dt} \vec{I}^{cl} \right| &= - \gamma_I I^{cl}H_\text{est} \sin 
+\theta\\
 \left| d \vec{I}^{cl} \right| &= I^{cl} \sin \theta d\varphi
 \end{split}
 \end{equation}
 Da queste si può dedurre la velocità angolare di precessione:
 \begin{equation}
 \begin{split}
-\omega_L = \frac{d \varphi}{dt} = - \gamma_I H_\text{est} \qquad \Rightarrow \qquad \nu = \frac{1}{2 \pi} \left|\omega_L \right| = \frac{1}{2 \pi} \left| \gamma_I \right| H_\text{est}
+\omega_L = \frac{d \varphi}{dt} = - \gamma_I H_\text{est} \qquad \Rightarrow 
+\qquad \nu = \frac{1}{2 \pi} \left|\omega_L \right| = \frac{1}{2 \pi} \left| 
+\gamma_I \right| H_\text{est}
 \end{split}
 \end{equation}
 A \marginnote{23-01-1998} questo punto si può applicare il principio di
-corrispondenza e si può concludere che $\left\langle \vec{I} \right\rangle$ sarà
+corrispondenza e si può concludere che $\left\langle \vec{I} \right\rangle$ 
+sarà
 soggetto a questo stesso moto di precessione con la stessa frequenza. Il moto di
 $\left\langle \vec{I} \right\rangle$ si può equivalentemente dedurre dal fatto
 che:
 \begin{equation}
-\left[ I^2, \mathcal{H} \right] = \left[ I_z, \mathcal{H} \right] = 0 \qquad \text{e}\ \qquad \left[ I_x, \mathcal{H} \right] \ne 0;\ \left[ I_y, \mathcal{H} \right] \ne 0
+\left[ I^2, \mathcal{H} \right] = \left[ I_z, \mathcal{H} \right] = 0 \qquad 
+\text{e}\ \qquad \left[ I_x, \mathcal{H} \right] \ne 0;\ \left[ I_y, 
+\mathcal{H} \right] \ne 0
 \end{equation}
-Vediamo come si può sfruttare questa proprietà per far passare il nucleo da uno
+Vediamo come si può sfruttare questa proprietà per far passare il nucleo da 
+uno
 stato a quello adiacente in modo da misurare $\gamma_I$. A due livelli di
 energia adiacenti saranno associati due diversi valori di $\theta$. Per
 stimolare la transizione si può usare un campo magnetico $H'$ ortogonale ad
@@ -283,22 +346,27 @@ $H_\text{est}$ e molto più piccolo in modulo. Questo campo $H'$ deve essere
 fatto ruotare attorno all'asse $\hat{z}$ con una velocità angolare risonante
 $\omega_r = \omega_L$. Se ci si pone nel sistema di riferimento solidale a
 $\left\langle \vec{I} \right\rangle$ il campo $H'$ sarà visto come un campo
-costante, il suo effetto sarà quindi quello di far variare l'angolo $\theta$. Il
+costante, il suo effetto sarà quindi quello di far variare l'angolo $\theta$. 
+Il
 fatto che $H' \ll H_\text{est}$ garantisce che i livelli energetici non saranno
-modificati. La transizione voluta si avrà solo quando la frequenza di $H'$ sarà
+modificati. La transizione voluta si avrà solo quando la frequenza di $H'$ 
+sarà
 uguale a $\omega_r$.
 
 Il rapporto giromagnetico nucleare  si può quindi determinare dal valore
 sperimentale di $\omega_r$:
 \begin{equation}
-\gamma_I = \frac{\omega_r}{H_\text{est}} \qquad \Leftrightarrow \qquad g_I = - \frac{\hbar}{\mu_N} \frac{\omega_r}{H_\text{est}}
+\gamma_I = \frac{\omega_r}{H_\text{est}} \qquad \Leftrightarrow \qquad g_I = - 
+\frac{\hbar}{\mu_N} \frac{\omega_r}{H_\text{est}}
 \end{equation}
 Nella pratica invece di usare un campo magnetico $H'$ ruotante si usa un campo
 magnetico alternato, ad esempio, nella direzione $\hat{y}$. Questo campo può
 essere pensato come la sovrapposizione di due campi uguali e ruotanti con
 frequenze opposte, cioè:
 \begin{equation}
-\vec{H}' = H' \cos (\omega t) \hat{y} = \frac{1}{2} H' (\cos (\omega t) \hat{y} + \sin (\omega t) \hat{x} ) + \frac{1}{2} H' (\cos (\omega t) \hat{y} - \sin (\omega t) \hat{x} )
+\vec{H}' = H' \cos (\omega t) \hat{y} = \frac{1}{2} H' (\cos (\omega t) \hat{y} 
++ \sin (\omega t) \hat{x} ) + \frac{1}{2} H' (\cos (\omega t) \hat{y} - \sin 
+(\omega t) \hat{x} )
 \end{equation}
 di questi due campi sarà efficace solo quello che ruota nel verso giusto. In
 realtà ciò che si misura è la potenza assorbita dai nuclei in funzione di
@@ -314,7 +382,8 @@ $1000$ gauss. In questo caso, per la frequenza di risonanza si ha $\omega_r
 \subsection{Sviluppo in serie del potenziale del nucleo}
 In un atomo il campo generato dagli elettroni si può considerare simmetrico
 attorno alla direzione di $\left\langle \vec{J} \right\rangle$, questa
-assunzione è buona viste le velocità con cui ruotano gli elettroni. Analogamente
+assunzione è buona viste le velocità con cui ruotano gli elettroni. 
+Analogamente
 la carica nucleare può essere assunta simmetrica attorno alla direzione di
 $\left\langle \vec{I} \right\rangle$.
 
@@ -322,7 +391,8 @@ Introduciamo due sistemi di riferimento con la stessa origine posta nel centro
 del nucleo. Il sistema di riferimento atomico sia preso con l'asse $\hat{z}$
 parallelo a $\left\langle \vec{J} \right\rangle$. Il sistema di riferimento
 nucleare con l'asse $\hat{z}'$ parallelo a $\left\langle \vec{I} \right\rangle$.
-L'energia elettrostatica del nucleo dovuta alla carica degli elettroni sarà data
+L'energia elettrostatica del nucleo dovuta alla carica degli elettroni sarà 
+data
 in termini classici da:
 \begin{equation}
 W_E = \int \rho^N_c{(\vec{r})} \varphi{(\vec{r})} dv
@@ -340,8 +410,13 @@ atomico ponendo:
 Quindi si ha che:
 \begin{equation}
 \begin{split}
-&\varphi{(\vec{r})} = \varphi{(0)} + \vec{\nabla} \varphi \vec{r} + \frac{1}{2} \sum_{\alpha, \beta = 1}^3 \frac{\partial^2 \varphi}{\partial x_{\alpha} \partial x_{\beta}} x_{\alpha} x_{\beta} + ...\\
-W_E &= \int \rho^{N}_{c} (\vec{r}) \left[ \varphi{(0)} + \vec{\nabla} \varphi \vec{r} + \frac{1}{2} \sum_{\alpha, \beta = 1}^3 \frac{\partial^2 \varphi}{\partial x_{\alpha} \partial x_{\beta}} x_{\alpha} x_{\beta} + ... \right] dv
+&\varphi{(\vec{r})} = \varphi{(0)} + \vec{\nabla} \varphi \vec{r} + \frac{1}{2} 
+\sum_{\alpha, \beta = 1}^3 \frac{\partial^2 \varphi}{\partial x_{\alpha} 
+\partial x_{\beta}} x_{\alpha} x_{\beta} + ...\\
+W_E &= \int \rho^{N}_{c} (\vec{r}) \left[ \varphi{(0)} + \vec{\nabla} \varphi 
+\vec{r} + \frac{1}{2} \sum_{\alpha, \beta = 1}^3 \frac{\partial^2 
+\varphi}{\partial x_{\alpha} \partial x_{\beta}} x_{\alpha} x_{\beta} + ... 
+\right] dv
 \end{split}
 \end{equation}
 dove le derivate sono calcolate nell'origine. Se trascuriamo tutti i termini
@@ -356,13 +431,16 @@ $\left\langle \vec{I} \right\rangle$ e $\left\langle \vec{J} \right\rangle$.
 
 Se consideriamo l'approssimazione successiva si ottiene il termine aggiuntivo:
 \begin{equation}
-\int \rho^{N}_c{(\vec{r})} \vec{\nabla} \varphi \vec{r} dv = \vec{\nabla} \varphi \int \rho^{N}_c{(\vec{r})} \vec{r} dv
+\int \rho^{N}_c{(\vec{r})} \vec{\nabla} \varphi \vec{r} dv = \vec{\nabla} 
+\varphi \int \rho^{N}_c{(\vec{r})} \vec{r} dv
 \end{equation}
-questo termine è non nullo solo se il nucleo ha un momento di dipolo nucleare definito come:
+questo termine è non nullo solo se il nucleo ha un momento di dipolo nucleare 
+definito come:
 \begin{equation}
 \vec{d}_N = \int \rho^{N}_c{(\vec{r})} \vec{r} dv
 \end{equation}
-per simmetria $\vec{d}_N$ deve essere orientato come $\left\langle \vec{I} \right\rangle$.
+per simmetria $\vec{d}_N$ deve essere orientato come $\left\langle \vec{I} 
+\right\rangle$.
 
 La presenza di questo momento implicherebbe che l'energia sia funzione
 dell'orientazione tra $\left\langle \vec{I} \right\rangle$ e $\left\langle
@@ -371,7 +449,8 @@ dell'energia da tali parametri, quindi è lecito porre:
 \begin{equation}
 \vec{d}_N = 0
 \end{equation}
-questo risultato può essere anche giustificato teoricamente mediante l'uso della
+questo risultato può essere anche giustificato teoricamente mediante l'uso 
+della
 meccanica quantistica.
 \\
 \\
@@ -379,12 +458,14 @@ Consideriamo l'espressione quantistica della densità di carica nucleare:
 \begin{equation}
 \rho_c{(x,y,z)}^N = \sum_{i=1}^A e_i P_i{(x,y,z)}
 \end{equation}
-dove $e_i$ è la carica del nucleone i-esimo e $P_i$ è la densità di probabilità
+dove $e_i$ è la carica del nucleone i-esimo e $P_i$ è la densità di 
+probabilità
 di trovare il nucleone nel punto $\vec{r} = (x,y,z)$.
 Dimostreremo in seguito che l'interazione che tiene uniti i nucleoni è
 invariante rispetto all'inversione degli assi, questo implica che:
 \begin{equation}
-P_i{(-x,-y,-z)} = P_i{(x,y,z)} \qquad \Rightarrow \qquad \rho_c{(-x,-y,-z)}^N = \rho_c{(x,y,z)}^N
+P_i{(-x,-y,-z)} = P_i{(x,y,z)} \qquad \Rightarrow \qquad \rho_c{(-x,-y,-z)}^N = 
+\rho_c{(x,y,z)}^N
 \end{equation}
 Questa proprietà spiega la mancanza di un momento di dipolo elettrico. Infatti
 ogni contributo al momento di dipolo $\vec{r} \rho_c^N dv$ viene annullato dal
@@ -400,11 +481,19 @@ calcolate nell'origine).
 Dimostriamo questa affermazione considerando prima le derivate rispetto a $x$ e
 $y$ (l'asse di simmetria in questo caso è l'asse $\hat{z}$)
 \begin{equation}
-\frac{\partial}{\partial x} \left( \frac{\partial \varphi}{\partial y} \right) = \frac{\partial}{\partial y} \left( \frac{\partial \varphi}{\partial x} \right) \qquad \text{e} \qquad \frac{\partial \varphi}{\partial x} = \frac{\partial \varphi}{\partial y} = \frac{\partial \varphi}{\partial r} \qquad \qquad r = \sqrt{x^2 + y^2}
+\frac{\partial}{\partial x} \left( \frac{\partial \varphi}{\partial y} \right) 
+= \frac{\partial}{\partial y} \left( \frac{\partial \varphi}{\partial x} 
+\right) \qquad \text{e} \qquad \frac{\partial \varphi}{\partial x} = 
+\frac{\partial \varphi}{\partial y} = \frac{\partial \varphi}{\partial r} 
+\qquad \qquad r = \sqrt{x^2 + y^2}
 \end{equation}
-la prima uguaglianza vale sempre mentre la seconda soltanto nell'origine. Quindi sempre nell'origine si ha:
+la prima uguaglianza vale sempre mentre la seconda soltanto nell'origine. 
+Quindi sempre nell'origine si ha:
 \begin{equation}
-\frac{\partial}{\partial x} \left( \frac{\partial \varphi}{\partial y} \right) = \frac{\partial}{\partial y} \left( \frac{\partial \varphi}{\partial x} \right) = \frac{\partial}{\partial r_{\perp}} \left( \frac{\partial \varphi}{\partial r} \right) = 0
+\frac{\partial}{\partial x} \left( \frac{\partial \varphi}{\partial y} \right) 
+= \frac{\partial}{\partial y} \left( \frac{\partial \varphi}{\partial x} 
+\right) = \frac{\partial}{\partial r_{\perp}} \left( \frac{\partial 
+\varphi}{\partial r} \right) = 0
 \end{equation}
 dove $\frac{\partial}{\partial r_{\perp}}$ è l'operatore derivata nella
 direzione ortogonale a quella di $r$. Consideriamo ora le derivate miste che
@@ -415,28 +504,39 @@ funzioni $\frac{\partial \varphi}{\partial x}$ e $\frac{\partial
 \varphi}{\partial y}$ sono simmetriche per inversione dell'asse $\hat{z}$ e
 quindi è dimostrato che:
 \begin{equation}
-\frac{\partial^2 \varphi}{\partial z \partial x} = \frac{\partial^2 \varphi}{\partial z \partial y} = 0
+\frac{\partial^2 \varphi}{\partial z \partial x} = \frac{\partial^2 
+\varphi}{\partial z \partial y} = 0
 \end{equation}
 Possiamo quindi concludere che l'energia del nucleo nel campo elettrostatico
 elettronico (cioè, dell'elettrone) si può scrivere come:
 \begin{equation}
 \begin{split}
 W_E &= Z e \varphi{(0)} + \Delta W_{\mathcal{Q}}\\
-\Delta W_{\mathcal{Q}} &= \frac{1}{2} \int \rho_c^N \sum_{\alpha = 1}^3 \left| \frac{\partial^2 \varphi}{\partial x_{\alpha}^2} \right|{(x=y=z=0)}  x_{\alpha}^2 dv \qquad = \qquad \frac{1}{2} \sum_{\alpha=1}^3 \left| \frac{\partial^2 \varphi}{\partial x_{\alpha}^2} \right|{(0)} \int \rho_c^N  x_{\alpha}^2 dv
+\Delta W_{\mathcal{Q}} &= \frac{1}{2} \int \rho_c^N \sum_{\alpha = 1}^3 \left| 
+\frac{\partial^2 \varphi}{\partial x_{\alpha}^2} \right|{(x=y=z=0)}  
+x_{\alpha}^2 dv \qquad = \qquad \frac{1}{2} \sum_{\alpha=1}^3 \left| 
+\frac{\partial^2 \varphi}{\partial x_{\alpha}^2} \right|{(0)} \int \rho_c^N  
+x_{\alpha}^2 dv
 \end{split}
 \end{equation}
 Possiamo dunque a questo punto sfruttare il fatto che nell'origine $\varphi$
 deve soddisfare l'equazione di Laplace:
 \begin{equation}
-\frac{\partial^2 \varphi}{\partial x^2} + \frac{\partial^2 \varphi}{\partial y^2} + \frac{\partial^2 \varphi}{\partial z^2} = 0 \qquad \Rightarrow \qquad \frac{\partial^2 \varphi}{\partial x^2} + \frac{\partial^2 \varphi}{\partial y^2} = -\frac{1}{2} \frac{\partial^2 \varphi}{\partial z^2}
+\frac{\partial^2 \varphi}{\partial x^2} + \frac{\partial^2 \varphi}{\partial 
+y^2} + \frac{\partial^2 \varphi}{\partial z^2} = 0 \qquad \Rightarrow \qquad 
+\frac{\partial^2 \varphi}{\partial x^2} + \frac{\partial^2 \varphi}{\partial 
+y^2} = -\frac{1}{2} \frac{\partial^2 \varphi}{\partial z^2}
 \end{equation}
 dove l'ultima implicazione sfrutta le proprietà di simmetria di $\varphi$.
 
 Quindi per $\Delta W_{\mathcal{Q}}$ si può scrivere:
 \begin{equation}
 \begin{split}
-\Delta W_{\mathcal{Q}} &= \frac{1}{2} \frac{\partial^2 \varphi}{\partial z^2} \int \rho_c^N \left[z^2 - \frac{1}{2}\left( x^2 + y^2 \right) \right] dv\\
-&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \int \rho_c^N \left[2z^2 - \left( x^2 + y^2 \right) \right] dv = \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \int \rho_c^N \left( 3z^2 - r^2 \right) dv
+\Delta W_{\mathcal{Q}} &= \frac{1}{2} \frac{\partial^2 \varphi}{\partial z^2} 
+\int \rho_c^N \left[z^2 - \frac{1}{2}\left( x^2 + y^2 \right) \right] dv\\
+&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \int \rho_c^N \left[2z^2 
+- \left( x^2 + y^2 \right) \right] dv = \frac{1}{4} \frac{\partial^2 
+\varphi}{\partial z^2} \int \rho_c^N \left( 3z^2 - r^2 \right) dv
 \end{split}
 \end{equation}
 dove si è posto $r^2 = x^2 + y^2 + z^2$. Tutti questi conti sono stati svolti
@@ -465,7 +565,8 @@ per $\rho_c^N$ vale che:
 \end{equation}
 da questa proprietà segue che:
 \begin{equation}
-\text{per}\ \alpha \ne \beta \qquad \mathcal{Q}_{\alpha \beta} = \int \rho_c^N 3 x'_{\alpha} x'_{\beta} dv = 0
+\text{per}\ \alpha \ne \beta \qquad \mathcal{Q}_{\alpha \beta} = \int \rho_c^N 
+3 x'_{\alpha} x'_{\beta} dv = 0
 \end{equation}
 Un'altra proprietà del tensore $\mathcal{Q}_{\alpha \beta}$ è quella di avere
 traccia nulla, infatti:
@@ -484,7 +585,8 @@ identificare con $\mathcal{Q}_{z' z'}$. Poniamo quindi:
 \mathcal{Q} = \mathcal{Q}_{z' z'} = \int \rho_c^N \left( 3 z^2 - r^2 \right) dv
 \end{empheq}
 
-Abitualmente, è proprio questa quantità che viene intesa come \textit{momento di
+Abitualmente, è proprio questa quantità che viene intesa come \textit{momento 
+di
 quadrupolo elettrico del nucleo}.
 
 \subsection{Momento di quadrupolo elettrico del nucleo}
@@ -513,12 +615,23 @@ z^2 = z'^2 \cos^2 \theta + x'^2 \sin^2 \theta + 2 x' z' \sin \theta \cos \theta
 Sostituendo queste espressioni in $\Delta W_{\mathcal{Q}}$ si ottiene:
 \begin{equation}
 \begin{split}
-\Delta W_{\mathcal{Q}} &= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \int \rho_c^N \left( 3 z^2 - r^2 \cos^2 \theta - r^2 \sin^2 \theta \right) dv =\\
-&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \left[ \int \rho_c^N \left( 3 z'^2 - r^2 \right) \cos^2 \theta dv + \int \rho_c^N \left( 3 x'^2 - r^2 \right) \sin^2 \theta dv + \int \rho_c^N 6 x'z' \sin \theta \cos \theta dv \right] =\\
-&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \left[ \int \rho_c^N \left( 3 z'^2 - r^2 \right) \cos^2 \theta dv + \int \rho_c^N \left( 3 x'^2 - r^2 \right) \sin^2 \theta dv \right] =\\
-&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \left[ \mathcal{Q}_{z' z'} \cos^2 \theta + \mathcal{Q}_{x' x'} \sin^2 \theta \right] = \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \left[ \mathcal{Q} \cos^2 \theta - \frac{1}{2} \mathcal{Q}(1 - \cos^2 \theta) \right]\\
+\Delta W_{\mathcal{Q}} &= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} 
+\int \rho_c^N \left( 3 z^2 - r^2 \cos^2 \theta - r^2 \sin^2 \theta \right) dv 
+=\\
+&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \left[ \int \rho_c^N 
+\left( 3 z'^2 - r^2 \right) \cos^2 \theta dv + \int \rho_c^N \left( 3 x'^2 - 
+r^2 \right) \sin^2 \theta dv + \int \rho_c^N 6 x'z' \sin \theta \cos \theta dv 
+\right] =\\
+&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \left[ \int \rho_c^N 
+\left( 3 z'^2 - r^2 \right) \cos^2 \theta dv + \int \rho_c^N \left( 3 x'^2 - 
+r^2 \right) \sin^2 \theta dv \right] =\\
+&= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \left[ \mathcal{Q}_{z' 
+z'} \cos^2 \theta + \mathcal{Q}_{x' x'} \sin^2 \theta \right] = \frac{1}{4} 
+\frac{\partial^2 \varphi}{\partial z^2} \left[ \mathcal{Q} \cos^2 \theta - 
+\frac{1}{2} \mathcal{Q}(1 - \cos^2 \theta) \right]\\
 \\
-\Delta W_{\mathcal{Q}} &= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} \cos^2 \theta - \frac{1}{2} \right) 
+\Delta W_{\mathcal{Q}} &= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} 
+\mathcal{Q} \left( \frac{3}{2} \cos^2 \theta - \frac{1}{2} \right) 
 \end{split}
 \end{equation}
 (nella seconda equazione, l'integrale $\int \rho_c^N 6 x'z' \sin \theta \cos
@@ -531,29 +644,45 @@ Abbiamo \marginnote{28-01-1998} visto che il contributo di energia
 elettrostatica dovuto al quadrupolo elettrico nucleare è dato dalle equazioni:
 \begin{empheq}[box=\fbox]{equation}
 \begin{split}
-\mathcal{Q} &= \mathcal{Q}_{z' z'} = \int \rho_c^N \left( 3 z^2 - r^2 \right) dv\\
-\Delta W_{\mathcal{Q}} &= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} \cos^2 \theta - \frac{1}{2} \right)
+\mathcal{Q} &= \mathcal{Q}_{z' z'} = \int \rho_c^N \left( 3 z^2 - r^2 \right) 
+dv\\
+\Delta W_{\mathcal{Q}} &= \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} 
+\mathcal{Q} \left( \frac{3}{2} \cos^2 \theta - \frac{1}{2} \right)
 \end{split}
 \end{empheq}
-Queste sono state ricavate da considerazioni classiche. In termini quantistici si ha:
+Queste sono state ricavate da considerazioni classiche. In termini quantistici 
+si ha:
 \begin{equation}
-\Delta W_{\mathcal{Q}} = \left\langle \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} \cos^2 \theta - \frac{1}{2} \right) \right\rangle  = \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} \left\langle \cos^2 \theta \right\rangle  - \frac{1}{2} \right)
+\Delta W_{\mathcal{Q}} = \left\langle \frac{1}{4} \frac{\partial^2 
+\varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} \cos^2 \theta - 
+\frac{1}{2} \right) \right\rangle  = \frac{1}{4} \frac{\partial^2 
+\varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} \left\langle \cos^2 
+\theta \right\rangle  - \frac{1}{2} \right)
 \end{equation}
 dove $\cos \theta$ è un operatore definito in maniera tale che:
 \begin{equation}
 \begin{split}
-\left\langle \cos \theta \right\rangle &= \frac{1}{\hbar^2 i j} \left\langle \vec{I} \cdot \vec{J} \right\rangle\\
-\left\langle \vec{I} \right\rangle  &= \left( \left\langle \vec{I}_x \right\rangle, \left\langle \vec{I}_y \right\rangle, \left\langle \vec{I}_z \right\rangle \right) = \left( 0, 0, \hbar i \right) \qquad \rightarrow \qquad \text{S.R. nucleare}\\
-\left\langle \vec{J} \right\rangle  &= \left( \left\langle \vec{J}_x \right\rangle, \left\langle \vec{J}_y \right\rangle, \left\langle \vec{J}_z \right\rangle \right) = \left( 0, 0, \hbar j \right) \qquad \rightarrow \qquad \text{S.R. atomico}\\
+\left\langle \cos \theta \right\rangle &= \frac{1}{\hbar^2 i j} \left\langle 
+\vec{I} \cdot \vec{J} \right\rangle\\
+\left\langle \vec{I} \right\rangle  &= \left( \left\langle \vec{I}_x 
+\right\rangle, \left\langle \vec{I}_y \right\rangle, \left\langle \vec{I}_z 
+\right\rangle \right) = \left( 0, 0, \hbar i \right) \qquad \rightarrow \qquad 
+\text{S.R. nucleare}\\
+\left\langle \vec{J} \right\rangle  &= \left( \left\langle \vec{J}_x 
+\right\rangle, \left\langle \vec{J}_y \right\rangle, \left\langle \vec{J}_z 
+\right\rangle \right) = \left( 0, 0, \hbar j \right) \qquad \rightarrow \qquad 
+\text{S.R. atomico}\\
 \end{split}
 \end{equation}
 L'operatore $\vec{I} \cdot \vec{J}$ si può scrivere come:
 \begin{equation}
-\vec{I} \cdot \vec{J} = \frac{1}{2} \left[ \vec{F}^2 - \vec{I}^2 - \vec{J}^2 \right] \qquad \qquad (\vec{F} = \vec{I} + \vec{J})
+\vec{I} \cdot \vec{J} = \frac{1}{2} \left[ \vec{F}^2 - \vec{I}^2 - \vec{J}^2 
+\right] \qquad \qquad (\vec{F} = \vec{I} + \vec{J})
 \end{equation}
 quindi il suo valore di aspettazione è:
 \begin{equation}
-\left\langle \vec{I} \cdot \vec{J} \right\rangle = \frac{\hbar}{2} K_f \qquad \qquad K_f = f(f+1) - i(i+1) - j(j+1)
+\left\langle \vec{I} \cdot \vec{J} \right\rangle = \frac{\hbar}{2} K_f \qquad 
+\qquad K_f = f(f+1) - i(i+1) - j(j+1)
 \end{equation}
 Per il valore di aspettazione di $\cos \theta$ si ottiene dunque:
 \begin{equation}
@@ -562,33 +691,42 @@ Per il valore di aspettazione di $\cos \theta$ si ottiene dunque:
 questo risultato però non ci consente di valutare in modo rigoroso la quantità
 $\left\langle \cos^2 \theta \right\rangle $ in quanto:
 \begin{equation}
-\left\langle \left( \vec{I} \cdot \vec{J} \right)^2  \right\rangle  \ne \left( \left\langle \vec{I} \cdot \vec{J} \right\rangle^2 \right) \qquad \Rightarrow \qquad \left\langle \cos^2 \theta \right\rangle \ne \left( \left\langle \cos \theta \right\rangle \right)^2
+\left\langle \left( \vec{I} \cdot \vec{J} \right)^2  \right\rangle  \ne \left( 
+\left\langle \vec{I} \cdot \vec{J} \right\rangle^2 \right) \qquad \Rightarrow 
+\qquad \left\langle \cos^2 \theta \right\rangle \ne \left( \left\langle \cos 
+\theta \right\rangle \right)^2
 \end{equation}
 questo è analogo al fatto che $\left\langle \vec{J}^2 \right\rangle \ne \left(
 \left\langle \vec{J} \right\rangle \right)^2$. Però si sa\footnote{Si sa? Tu lo
 sai? E chi lo sa? [cit.]} che:
 \begin{equation}
-\left\langle \vec{J}^2 \right\rangle \simeq \left( \left\langle \vec{J} \right\rangle \right)^2 \qquad \text{quando}\ j \gg 1
+\left\langle \vec{J}^2 \right\rangle \simeq \left( \left\langle \vec{J} 
+\right\rangle \right)^2 \qquad \text{quando}\ j \gg 1
 \end{equation}
 analogamente avviene che:
 \begin{equation}
-\left\langle \cos^2 \theta \right\rangle \simeq \left( \left\langle \cos \theta \right\rangle \right)^2 = \frac{K_f^2}{4(ij)^2}
+\left\langle \cos^2 \theta \right\rangle \simeq \left( \left\langle \cos \theta 
+\right\rangle \right)^2 = \frac{K_f^2}{4(ij)^2}
 \end{equation}
 Questa approssimazione ci consente di scrivere la seguente formula
 semi-classica:
 \begin{empheq}[box=\fbox]{equation}
-\Delta W_{\mathcal{Q}} = \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} K_f^2 - 2i^2j^2 \right) \frac{1}{4i^2j^2}
+\Delta W_{\mathcal{Q}} = \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} 
+\mathcal{Q} \left( \frac{3}{2} K_f^2 - 2i^2j^2 \right) \frac{1}{4i^2j^2}
 \end{empheq}
 La corrispondente espressione quantistica che non verrà però dimostrata è:
 \begin{empheq}[box=\fbox]{equation}
-\Delta W_{\mathcal{Q}} = \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} \mathcal{Q} \left( \frac{3}{2} K_f(K_f+1) - 2i(i+1)j(j+1) \right) \frac{1}{i(2i-1)j(2j-1)}
+\Delta W_{\mathcal{Q}} = \frac{1}{4} \frac{\partial^2 \varphi}{\partial z^2} 
+\mathcal{Q} \left( \frac{3}{2} K_f(K_f+1) - 2i(i+1)j(j+1) \right) 
+\frac{1}{i(2i-1)j(2j-1)}
 \end{empheq}
 si vede subito che questa tende a quella semi-classica nei limiti suddetti. In
 entrambe le formule compare il numero quantico $f$ che può assumere valori:
 \begin{equation}
 f = i+j, i+j-1, i+j-2, ..., \left| i-j \right| 
 \end{equation}
-e a diversi valori di $f$ corrispondono diversi valori di $\Delta W_{\mathcal{Q}}$:
+e a diversi valori di $f$ corrispondono diversi valori di $\Delta 
+W_{\mathcal{Q}}$:
 \begin{equation}
 \Delta W_{\mathcal{Q}} = \left( \Delta W_{\mathcal{Q}} \right)_f 
 \end{equation}
@@ -609,25 +747,32 @@ In termini classici si può scrivere:
 \begin{equation}
 \begin{split}
 \rho_c{(\vec{r})}^N &= Z e \rho{(\vec{r})}^N\\
-\mathcal{Q} &= Z e \int \rho{(\vec{r})}^N (3z'^2 - r^2) dv = Z e (3 \left\langle z'^2 \right\rangle - \left\langle r^2 \right\rangle )
+\mathcal{Q} &= Z e \int \rho{(\vec{r})}^N (3z'^2 - r^2) dv = Z e (3 
+\left\langle z'^2 \right\rangle - \left\langle r^2 \right\rangle )
 \end{split}
 \end{equation}
 dove si ha:
 \begin{equation}
-\left\langle r^2 \right\rangle  = \left\langle x'^2 \right\rangle + \left\langle y'^2 \right\rangle + \left\langle z'^2 \right\rangle \qquad \text{e} \qquad \left\langle x'^2 \right\rangle = \left\langle y'^2 \right\rangle
+\left\langle r^2 \right\rangle  = \left\langle x'^2 \right\rangle + 
+\left\langle y'^2 \right\rangle + \left\langle z'^2 \right\rangle \qquad 
+\text{e} \qquad \left\langle x'^2 \right\rangle = \left\langle y'^2 
+\right\rangle
 \end{equation}
 La stessa connessione tra $\mathcal{Q}$ e la forma del nucleo può essere
 ricavata in termini quantistici:
 \begin{equation}
 \rho_c{(\vec{r})}^N = \sum_{k=1}^A e_k P_k{(\vec{r})}
 \end{equation}
-dove $P_k{(\vec{r})}$ è la densità di probabilità di trovare il nucleone k-esimo nel punto $\vec{r}$.
+dove $P_k{(\vec{r})}$ è la densità di probabilità di trovare il nucleone 
+k-esimo nel punto $\vec{r}$.
 
 Indichiamo con $\psi{(\vec{r}_1, \vec{r}_2, ..., \vec{r}_A)}$ la funzione che
 descrive lo stato quantico del nucleo. Questo stato è caratterizzato dal fatto
 che $I_z$ è massima $(=i\hbar)$. Si avrà quindi che:
 \begin{equation}
-P_k{(\vec{r})} = P_k{(\vec{r}_k)} = \int \left| \psi{(\vec{r}_1, \vec{r}_2, ..., \vec{r}_A)} \right| ^2 d^3 \vec{r}_1, ..., d^3 \vec{r}_{k-1}, d^3 \vec{r}_{k+1}, ..., d^3 \vec{r}_A
+P_k{(\vec{r})} = P_k{(\vec{r}_k)} = \int \left| \psi{(\vec{r}_1, \vec{r}_2, 
+..., \vec{r}_A)} \right| ^2 d^3 \vec{r}_1, ..., d^3 \vec{r}_{k-1}, d^3 
+\vec{r}_{k+1}, ..., d^3 \vec{r}_A
 \end{equation}
 Se utilizziamo questa equazione per scrivere $\rho_c$, per $\mathcal{Q}$ si
 avrà:
@@ -635,15 +780,18 @@ avrà:
 \begin{split}
 \mathcal{Q} &= \int \rho_c^N \left( 3 z'^2 - r^2 \right) dv\\
 &= \sum_{k=1}^A e_k \int P_k{(\vec{r})} \left( 3 z'^2 - r^2 \right) dv\\
-&= e \sum_{k=1}^Z \int P_k{(\vec{r})} \left( 3 z'^2_k - r_k^2 \right) d^3\vec{r}_k\\
-&= e \sum_{k=1}^Z \int \left| \psi{(\vec{r}_1, \vec{r}_2, ..., \vec{r}_A)} \right| ^2 \left( 3 z'^2_k - r_k^2 \right) d^3 \vec{r}_1, ..., d^3 \vec{r}_A
+&= e \sum_{k=1}^Z \int P_k{(\vec{r})} \left( 3 z'^2_k - r_k^2 \right) 
+d^3\vec{r}_k\\
+&= e \sum_{k=1}^Z \int \left| \psi{(\vec{r}_1, \vec{r}_2, ..., \vec{r}_A)} 
+\right| ^2 \left( 3 z'^2_k - r_k^2 \right) d^3 \vec{r}_1, ..., d^3 \vec{r}_A
 \end{split}
 \end{equation}
 questi contributi sono tutti uguali in quanto trattandosi di particelle
 identiche, il modulo quadro di $\psi$ non cambia per lo scambio di due indici,
 dunque si può scrivere:
 \begin{empheq}[box=\fbox]{equation}
-\mathcal{Q} = Z e \int \left| \psi{(\vec{r}_1, \vec{r}_2, ..., \vec{r}_A)} \right| ^2 \left( 3 z'^2_k - r_k^2 \right) d^3 \vec{r}_1, ..., d^3 \vec{r}_A
+\mathcal{Q} = Z e \int \left| \psi{(\vec{r}_1, \vec{r}_2, ..., \vec{r}_A)} 
+\right| ^2 \left( 3 z'^2_k - r_k^2 \right) d^3 \vec{r}_1, ..., d^3 \vec{r}_A
 \end{empheq}
 il momento di quadrupolo $\mathcal{Q}$ sarà nullo per nuclei con spin zero, in
 quanto la $\rho$ avrà simmetria sferica. Esiste una regola empirica secondo cui
@@ -659,26 +807,34 @@ z'^2 &= r^2 \cos^2 \theta = r^2 \frac{I_r^2}{\vec{I}^2}\\
 I_r &= \vec{r} \cdot \vec{I} = I r \cos \theta
 \end{split}
 \end{equation}
-dove si è preso $\vec{I}$ lungo l'asse $\hat{z}'$. Nel caso di spin $\frac{1}{2}$ si ha:
+dove si è preso $\vec{I}$ lungo l'asse $\hat{z}'$. Nel caso di spin 
+$\frac{1}{2}$ si ha:
 \begin{equation}
 \begin{split}
-\left\langle \vec{I}^2 \right\rangle &= \frac{1}{2} \left( \frac{1}{2} + 1 \right) \hbar^2 = \frac{3}{4} \hbar^2\\
-\left\langle I_r^2 \right\rangle &= \frac{1}{4} \hbar P_+ + \frac{1}{4} \hbar P_- = \frac{1}{4} \hbar ^2
+\left\langle \vec{I}^2 \right\rangle &= \frac{1}{2} \left( \frac{1}{2} + 1 
+\right) \hbar^2 = \frac{3}{4} \hbar^2\\
+\left\langle I_r^2 \right\rangle &= \frac{1}{4} \hbar P_+ + \frac{1}{4} \hbar 
+P_- = \frac{1}{4} \hbar ^2
 \end{split}
 \end{equation}
 dove $P_+$ e $P_-$ sono le probabilità di avere spin $\frac{1}{2}$ e
 $-\frac{1}{2}$ lungo la direzione $\vec{r}$. Calcoliamo adesso $\left\langle
 \hat{z}'^2 \right\rangle$:
 \begin{equation}
-\left\langle \hat{z}'^2 \right\rangle  = \frac{4}{3} \left\langle r^2 \right\rangle \frac{1}{4} = \frac{1}{3} \left\langle r^2 \right\rangle = \left\langle r^2 \right\rangle \frac{\left\langle I_r^2 \right\rangle}{\left\langle \vec{I}^2 \right\rangle}
+\left\langle \hat{z}'^2 \right\rangle  = \frac{4}{3} \left\langle r^2 
+\right\rangle \frac{1}{4} = \frac{1}{3} \left\langle r^2 \right\rangle = 
+\left\langle r^2 \right\rangle \frac{\left\langle I_r^2 
+\right\rangle}{\left\langle \vec{I}^2 \right\rangle}
 \end{equation}
 Il nucleo di spin $\frac{1}{2}$ si può immaginare come un nucleo di spin zero
 più un nucleone. Se si ha un nucleo con $\mathcal{Q} \ne 0$ allora certamente
 non si ha simmetria sferica. Si possono allora distinguere due casi:
 \begin{equation}
 \begin{split}
-\mathcal{Q} &> 0 \qquad \Rightarrow \qquad \left\langle \hat{z}'^2 \right\rangle > \frac{1}{3} \left\langle r^2 \right\rangle\\
-\mathcal{Q} &< 0 \qquad \Rightarrow \qquad \left\langle \hat{z}'^2 \right\rangle < \frac{1}{3} \left\langle r^2 \right\rangle
+\mathcal{Q} &> 0 \qquad \Rightarrow \qquad \left\langle \hat{z}'^2 
+\right\rangle > \frac{1}{3} \left\langle r^2 \right\rangle\\
+\mathcal{Q} &< 0 \qquad \Rightarrow \qquad \left\langle \hat{z}'^2 
+\right\rangle < \frac{1}{3} \left\langle r^2 \right\rangle
 \end{split}
 \end{equation}
 Nel primo caso la forma del nucleo è uno sferoide allungato nella direzione di
@@ -693,7 +849,8 @@ semiasse maggiore e minore del tipo:
 \begin{equation}
 \frac{d_\text{max}}{d_\text{min}} \sim 1 + 0.1 
 \end{equation}
-quindi in realtà si ha una distorsione della simmetria sferica estremamente piccola.
+quindi in realtà si ha una distorsione della simmetria sferica estremamente 
+piccola.
 
 \chapter{Modelli Nucleari}
 \section{Modello a goccia di liquido}
@@ -731,14 +888,17 @@ A questo termine bisogna sottrarre la quantità di massa equivalente all'energia
 di legame dei nucleoni. Sia $U$ l'energia di legame fra due nucleoni, il difetto
 di massa di un nucleone dovuto ad un solo legame è:
 \begin{equation}
-\delta m_i{(j)} = \delta m_j{(i)} = \frac{1}{c^2} \frac{U}{2} \qquad \qquad \text{i, j = nucleoni}
+\delta m_i{(j)} = \delta m_j{(i)} = \frac{1}{c^2} \frac{U}{2} \qquad \qquad 
+\text{i, j = nucleoni}
 \end{equation}
 quindi ogni nucleone avrà un difetto di massa totale pari a:
 \begin{equation}
-\delta m_i = \sum_{j = 1}^{12} \delta m_i{(j)} = \frac{12}{c^2} \frac{U}{2} = 6 \frac{U}{c^2}
+\delta m_i = \sum_{j = 1}^{12} \delta m_i{(j)} = \frac{12}{c^2} \frac{U}{2} = 6 
+\frac{U}{c^2}
 \end{equation}
 questo è il difetto di massa di un nucleone circondato da $12$ nucleoni. Se si
-trascura il fatto che non tutti i nucleoni sono interni si può sottrarre a $M_0$
+trascura il fatto che non tutti i nucleoni sono interni si può sottrarre a 
+$M_0$
 il termine:
 \begin{equation}
 M_1 = \sum_{i = 1}^A \delta m_i = A \frac{6U}{c^2}
@@ -760,12 +920,14 @@ superficiali, il cui difetto di massa deve essere ridotto di:
 \begin{equation}
 \delta m_\text{sup} = \frac{3}{c^2} \frac{U}{2}
 \end{equation}
-(poichè i nucleoni di superficie sono a contatto con $9$ nucleoni invece di $12$).
+(poichè i nucleoni di superficie sono a contatto con $9$ nucleoni invece di 
+$12$).
 
 Per calcolare il numero di nucleoni superficiali si deve considerare la densità
 di nucleoni. Si ha dunque che:
 \begin{equation}
-\frac{A}{V_N} = \frac{3A}{4 \pi R^3} = \frac{A}{\frac{4}{3} \pi r_0^3 A} \qquad \qquad R = r_0 A^{\frac{1}{3}}
+\frac{A}{V_N} = \frac{3A}{4 \pi R^3} = \frac{A}{\frac{4}{3} \pi r_0^3 A} \qquad 
+\qquad R = r_0 A^{\frac{1}{3}}
 \end{equation}
 Consideriamo uno strato superficiale di spessore $d$, dove $d$ è il diametro di
 un nucleone. Il volume di questo strato è:
@@ -774,7 +936,8 @@ un nucleone. Il volume di questo strato è:
 \end{equation}
 quindi il numero di nucleoni superficiali è:
 \begin{equation}
-\delta A = \frac{A}{V_N} \delta V = \frac{A}{V_N} 4 \pi R^2 d = \frac{3 d A}{R} = \frac{3 d A^{\frac{2}{3}}}{r_0}
+\delta A = \frac{A}{V_N} \delta V = \frac{A}{V_N} 4 \pi R^2 d = \frac{3 d A}{R} 
+= \frac{3 d A^{\frac{2}{3}}}{r_0}
 \end{equation}
 L'incremento di massa dovuto ai nucleoni superficiali dunque è:
 \begin{equation}
@@ -845,7 +1008,8 @@ A < 36\ \Rightarrow\ N \simeq Z \qquad \qquad A > 36\ \Rightarrow\ N > Z
 \end{equation}
 Questa tendenza dei nuclei stabili porta a dover fare due considerazioni:
 
-L'eccesso di neutroni nei nuclei con $A > 36$ si può ricollegare alla repulsione
+L'eccesso di neutroni nei nuclei con $A > 36$ si può ricollegare alla 
+repulsione
 elettrostatica. L'aumento del numero di neutroni riduce infatti il valore di
 $E_L$ a parità di $A$. La maggiore stabilità di un nucleo implica un minimo di
 energia, motivo per cui i nuclei tendono ad aumentare il numero di neutroni al
@@ -859,14 +1023,16 @@ neutroni (mantenendo $A$ fisso) l'energia non diminuirebbe ma tenderebbe
 piuttosto ad aumentare (al crescere di $N$, $E_c$ diminuisce ma $E_L$ aumenta).
 Si può dimostrare che se si ha uno stato legato con due tipi di fermioni,
 l'energia è minima quando viene minimizzato il numero complessivo di coppie di
-fermioni identici. Questo perchè i fermioni identici interagiscono tramite forze
+fermioni identici. Questo perchè i fermioni identici interagiscono tramite 
+forze
 di scambio che tendono ad aumentarne l'energia.
 
 Per tenere conto di questa ulteriore diminuizione di $E_L$, a seconda della
 quantità di neutroni presenti bisogna considerare il \textit{termine di
 simmetria} aggiuntivo:
 \begin{empheq}[box=\fbox]{equation}
-E_\text{simm} = a_\text{simm}\ A \left[ \frac{\left( \frac{A}{2} \right) - Z}{A} \right]^2 c^2
+E_\text{simm} = a_\text{simm}\ A \left[ \frac{\left( \frac{A}{2} \right) - 
+Z}{A} \right]^2 c^2
 \end{empheq}
 è questa l'energia che aumenta più di quanto diminuisca $E_c$ (al crescere di
 $N$). Il termine raccolto entro le parentesi rappresenta la percentuale di
@@ -877,7 +1043,9 @@ proporzionalità ad $A$ di questo termine è legata all'incomprimibilità del
 nucleo in quanto la densità di energia $\frac{E_\text{simm}}{V}$ deve risultare
 costante. Il corrispondente incremento di massa è:
 \begin{equation}
-M_4{(A, Z)} = a_\text{simm}\ A \left[ \frac{\left( \frac{A}{2} \right) - Z}{A} \right]^2 = a_\text{simm}\ \frac{\left[ \left( \frac{A}{2} - Z \right)  \right]^2}{A}
+M_4{(A, Z)} = a_\text{simm}\ A \left[ \frac{\left( \frac{A}{2} \right) - Z}{A} 
+\right]^2 = a_\text{simm}\ \frac{\left[ \left( \frac{A}{2} - Z \right)  
+\right]^2}{A}
 \end{equation}
 e le correzioni:
 \begin{equation}
@@ -888,7 +1056,8 @@ E_L &= E_\text{vol} - E_\text{sup} - E_c - E_\text{simm}
 \end{equation}
 
 \subsection{Termini correttivi sperimentali e formula di Weizs\"{a}cker}
-Vi è un'ultima correzione da fare legata alla verifica sperimentale che vi è una
+Vi è un'ultima correzione da fare legata alla verifica sperimentale che vi è 
+una
 maggiore abbondanza di nuclei stabili con un numero di protoni e neutroni
 entrambi pari piuttosto che quando sono entrambi dispari (per valori di $A$
 fissati). Questa condizione riguarda soltanto i nuclei con valori di $A$ pari.
@@ -896,11 +1065,13 @@ fissati). Questa condizione riguarda soltanto i nuclei con valori di $A$ pari.
 Il termine di massa correttivo si ricava sperimentalmente, ed esso è pari a:
 \begin{equation}
 M_S = \begin{cases}
-\frac{\delta}{\sqrt{A}} = -\frac{K}{\sqrt{A}} \qquad \qquad &\text{$A$ pari, $Z$ pari}\\
+\frac{\delta}{\sqrt{A}} = -\frac{K}{\sqrt{A}} \qquad \qquad &\text{$A$ pari, 
+$Z$ pari}\\
 \\
 \frac{\delta}{\sqrt{A}} = 0 \qquad \qquad &\text{$A$ pari, $Z$ dispari}\\
 \\
-\frac{\delta}{\sqrt{A}} = +\frac{K}{\sqrt{A}} \qquad \qquad &\text{$A$ dispari, $Z$ dispari}
+\frac{\delta}{\sqrt{A}} = +\frac{K}{\sqrt{A}} \qquad \qquad &\text{$A$ dispari, 
+$Z$ dispari}
 \end{cases}
 \end{equation}
 Mettendo insieme tutti i risultati ottenuti si conclude che nel modello a goccia
@@ -908,15 +1079,20 @@ di liquido la massa può essere calcolata tramite la formula semi-empirica,
 chiamata \textit{formula di Weizs\"{a}cker}:
 \begin{equation}
 \begin{split}
-M{(A, Z)} &= M_0{(A, Z)} - M_1{(A)} + M_2{(A)} + M_3{(A, Z)} + M_4{(A, Z)} + M_5{(A)} =\\
-&= \left[ m_p Z + m_N(A-Z) \right] - a_\text{vol}\ A + a_\text{sup}\ A^{\frac{2}{3}} + \frac{3}{5} a_c\ \frac{Z^2}{A^{\frac{1}{3}}} + a_\text{simm}\ \frac{\left[ \left( \frac{A}{2} - Z \right)  \right]^2}{A} + \frac{\delta}{A^{\frac{1}{2}}}
+M{(A, Z)} &= M_0{(A, Z)} - M_1{(A)} + M_2{(A)} + M_3{(A, Z)} + M_4{(A, Z)} + 
+M_5{(A)} =\\
+&= \left[ m_p Z + m_N(A-Z) \right] - a_\text{vol}\ A + a_\text{sup}\ 
+A^{\frac{2}{3}} + \frac{3}{5} a_c\ \frac{Z^2}{A^{\frac{1}{3}}} + a_\text{simm}\ 
+\frac{\left[ \left( \frac{A}{2} - Z \right)  \right]^2}{A} + 
+\frac{\delta}{A^{\frac{1}{2}}}
 \end{split}
 \end{equation}
 I coefficienti $a$ non possono essere ricavati da alcuna teoria generale che
 mostri accordo con i valori sperimentali (!). Dei valori frequentamente usati
 sono, ad esempio:
 \begin{equation}
-a_\text{vol} = 15.67 \qquad a_\text{sup} = 17.23 \qquad \frac{3}{5} a_c = 0.70 \qquad a_\text{simm} = 93.15 \qquad \delta = 1.2
+a_\text{vol} = 15.67 \qquad a_\text{sup} = 17.23 \qquad \frac{3}{5} a_c = 0.70 
+\qquad a_\text{simm} = 93.15 \qquad \delta = 1.2
 \end{equation}
 Con questi valori si ottiene in genere una precisione media di $2$ MeV/$C^2$ che
 è un ottimo risultato. Il limite di questo modello è quello di ottenere però
@@ -927,9 +1103,11 @@ Si può ricavare il valore di $Z$ per cui si ha il minimo della massa per una
 serie di isobari con un dato $A$, utilizzando la condizione $\frac{\partial
 M}{\partial Z}$  = 0. Si arriva alla formula:
 \begin{equation}
-\frac{6}{5} a_c \frac{Z}{A^{\frac{1}{3}}} - 2 \frac{a_\text{simm}}{A} \left( \frac{A}{2} - Z \right) - \left(m_N - m_P \right) = 0
+\frac{6}{5} a_c \frac{Z}{A^{\frac{1}{3}}} - 2 \frac{a_\text{simm}}{A} \left( 
+\frac{A}{2} - Z \right) - \left(m_N - m_P \right) = 0
 \end{equation}
-Questa equazione riproduce la cosiddetta \textit{curva di Segrè} che restituisce
+Questa equazione riproduce la cosiddetta \textit{curva di Segrè} che 
+restituisce
 la funzione $Z - N$. (vedere \pageref{allegato_2})
 \subsection{Energia di fissione}
 Un' \marginnote{04-02-1998} altra applicazione della formula delle masse
@@ -939,7 +1117,8 @@ quindi non se ne può misurare direttamente la massa. Possiamo schematizzare il
 processo di fissione considerando un nucleo a riposo di massa $M{(A, Z)}$ che si
 scinde in due frammenti uguali di massa $M{(\frac{A}{2}, \frac{Z}{2})}$, cioè:
 \begin{equation}
-M{(A, Z)} \qquad \rightarrow \qquad M{(\frac{A}{2}, \frac{Z}{2})} + M{(\frac{A}{2}, \frac{Z}{2})}
+M{(A, Z)} \qquad \rightarrow \qquad M{(\frac{A}{2}, \frac{Z}{2})} + 
+M{(\frac{A}{2}, \frac{Z}{2})}
 \end{equation}
 l'energia associata a questo processo è definita \textit{energia di fissione} e
 si può scrivere come:
@@ -948,7 +1127,8 @@ E_F = \left[ M{(A, Z)} - 2  M{(\frac{A}{2}, \frac{Z}{2})} \right] c^2
 \end{empheq}
 Dall'espressione di $M{(A, Z)}$ si trova che $E_F$ risulta positiva per $A \ge
 90$. Questo implica che nuclei con $A > 90$ non dovrebbero risultare stabili.
-Consideriamo infatti un nucleo di Uranio $^{236}U$, l'energia di fissione è $E_F
+Consideriamo infatti un nucleo di Uranio $^{236}U$, l'energia di fissione è 
+$E_F
 \simeq 184$ MeV.
 
 Il modello a goccia di liquido riesce a spiegare anche perchè molti di questi
@@ -961,7 +1141,8 @@ non sia più sferica ma si abbia un $R'{(\theta)} = Rf{(\theta)}$ dove $R$
 rappresenta il raggio iniziale. Espandendo la funzione $f{(\theta)}$ in serie di
 polinomi di Legendre:
 \begin{equation}
-f{(\theta)} = 1 + \alpha_1 P_1 (\cos \theta) + \alpha_2 P_2 (\cos \theta) + \alpha_3 P_3 (\cos \theta) + ...
+f{(\theta)} = 1 + \alpha_1 P_1 (\cos \theta) + \alpha_2 P_2 (\cos \theta) + 
+\alpha_3 P_3 (\cos \theta) + ...
 \end{equation}
 dove si ha:
 \begin{equation}
@@ -984,12 +1165,14 @@ f{(\theta)} = 1 + \alpha_2 P_2 (\cos \theta)
 \end{equation}
 La condizione di incompressibilità richiede che il volume nucleare debba
 rimanere invariato. Quindi questa deformazione può cambiare soltanto l'energia
-di superficie ed il termine coulombiano, in quanto non può influenzare l'energia
+di superficie ed il termine coulombiano, in quanto non può influenzare 
+l'energia
 di volume e quella di simmetria i cui valori dipendono soltanto dal volume
 complessivo. Se si trascurano i termini di ordine superiore a $\alpha_2^2$ si
 ottiene  che:
 \begin{empheq}[box=\fbox]{equation}
-\delta E = \delta E_\text{sup} + \delta E_{c} = \left( 2E_\text{sup} - E_c \right) \frac{\alpha_2^2}{5}
+\delta E = \delta E_\text{sup} + \delta E_{c} = \left( 2E_\text{sup} - E_c 
+\right) \frac{\alpha_2^2}{5}
 \end{empheq}
 dove $E_\text{sup}$ e $E_c$ sono i valori di energia in assenza di distorsione.
 Questo termine $\delta E$  si può interpretare come un'energia potenziale di
@@ -1000,7 +1183,8 @@ distorsione. In particolare si ha che:
 \delta E &< 0 \qquad \qquad \text{se}\ 2 E_\text{sup} < E_c
 \end{split}
 \end{equation}
-Nel primo caso il nucleo risulterà stabile per piccole deformazioni, nel secondo
+Nel primo caso il nucleo risulterà stabile per piccole deformazioni, nel 
+secondo
 caso il nucleo sarà completamente instabile ed esso continuerà a deformarsi
 sempre di più fino a frammentarsi. La situazione di confine tra questi due casi
 si ha quando $2E_\text{sup} = E_c$, questa condizione implica che:
@@ -1009,14 +1193,16 @@ si ha quando $2E_\text{sup} = E_c$, questa condizione implica che:
 \end{equation}
 e questa condizione si verifica quando:
 \begin{equation}
-\frac{Z^2}{A} = \left( \frac{Z^2}{A} \right)_\text{limite} = \frac{2 a_\text{sup}}{\frac{3}{5}a_c} \simeq 49
+\frac{Z^2}{A} = \left( \frac{Z^2}{A} \right)_\text{limite} = \frac{2 
+a_\text{sup}}{\frac{3}{5}a_c} \simeq 49
 \end{equation}
 quindi se $\frac{Z^2}{A} < 49$ il nucleo risulterà stabile per piccole
 deformazioni e quindi non potrà subire processi di fissione spontanea. Si può
 verificare che la dipendenza di $\delta E$ dal fattore $2E_\text{sup} - E_c$ non
 dipende dalla particolare deformazione considerata:
 \begin{equation}
-\eta\ =\ \frac{\frac{Z^2}{A}}{\left( \frac{Z^2}{A} \right)_\text{limite}} \qquad \Rightarrow \qquad \begin{cases}
+\eta\ =\ \frac{\frac{Z^2}{A}}{\left( \frac{Z^2}{A} \right)_\text{limite}} 
+\qquad \Rightarrow \qquad \begin{cases}
 \eta < 1 \qquad &\text{Non soggetto a fissione spontanea}\\
 \eta > 1 \qquad &\text{Soggetto a fissione spontanea}
 \end{cases}
@@ -1035,7 +1221,8 @@ distanza dai loro centri. Si ottiene il seguente andamento:
 \label{fig:energy}
 \input{img/dis_p86}
 \end{figure}
-$M$ è la massa del nucleo fissile, $M_1$, $M_2$, $R_1$ e $R_2$ sono le masse e i
+$M$ è la massa del nucleo fissile, $M_1$, $M_2$, $R_1$ e $R_2$ sono le masse e 
+i
 raggi finali dei due frammenti. L'andamento per $r > R_1 + R_2$ è una iperbole
 che è dovuta soltanto all'energia potenziale coulombiana tra i due frammenti.
 (vedere \pageref{allegato_3}, \pageref{allegato_41} e \pageref{allegato_42})
@@ -1053,7 +1240,8 @@ risulta ancora utile. (vedere \pageref{allegato_5})
 Il \marginnote{06-02-1998} modello a goccia di liquido non va bene per nuclei
 con $A \le 10$. Questo perchè il modello ha una impostazione di carattere
 statistico. In più, per certi valori di $A$ e di $Z$ si osservano
-sperimentalmente grosse discontinuità mentre il modello studiato ha un andamento
+sperimentalmente grosse discontinuità mentre il modello studiato ha un 
+andamento
 pressochè continuo. Queste discontinuità si riscontrano quando $Z$ e $A - Z$
 hanno valori vicini ai numeri:
 \begin{equation}
@@ -1079,7 +1267,8 @@ nuclei. L'energia media di legame tra due nucleoni è:
 U = \frac{15.67}{6}\ \text{MeV} \simeq 2.6\ \text{MeV}
 \end{equation}
 mentre nei nuclei magici si osserva una diminuizione di circa $2$ MeV. Il più
-grande esempio di discontinuità è il nucleo doppiamente magico di $He$, infatti
+grande esempio di discontinuità è il nucleo doppiamente magico di $He$, 
+infatti
 si ha:
 \begin{equation}
 \begin{split}
@@ -1096,9 +1285,11 @@ decadimento, cioè:
 \begin{equation}
 \mathcal{N}{(126, Z)} \qquad \rightarrow \qquad \mathcal{N}{(124, Z-2)} + \alpha
 \end{equation}
-e facciamo un confronto con il decadimento $\alpha$ del nucleo $\mathcal{N}{(128, Z')}$
+e facciamo un confronto con il decadimento $\alpha$ del nucleo 
+$\mathcal{N}{(128, Z')}$
 \begin{equation}
-\mathcal{N}{(128, Z')} \qquad \rightarrow \qquad \mathcal{N}{(126, Z'-2)} + \alpha
+\mathcal{N}{(128, Z')} \qquad \rightarrow \qquad \mathcal{N}{(126, Z'-2)} + 
+\alpha
 \end{equation}
 Si trova sperimentalmente che i due neutroni espulsi nel secondo decadimento
 hanno una energia cinetica molto più grande di quelli espulsi nel primo
@@ -1111,12 +1302,15 @@ neutroni. La sezione d'urto è infatti molto più piccola rispetto a quella dei
 nuclei non magici. Tutte queste proprietà ricordano quelle degli atomi dei gas
 nobili, in cui si usa un modello a strati per spiegarne le proprietà.
 
-Si formula quindi un analogo \textit{modello a strati} per i nuclei. La validità
-di un tale modello è confermata dal fatto che anche i nuclei possono trovarsi in
+Si formula quindi un analogo \textit{modello a strati} per i nuclei. La 
+validità
+di un tale modello è confermata dal fatto che anche i nuclei possono trovarsi 
+in
 stati eccitati dai quali decadono emettendo radiazione $\gamma$. Il modello a
 strati si differenzia notevolmente da quello a goccia di liquido, ogni nucleone
 occupa infatti un ben preciso orbitale diverso da quello degli altri. Si
-riscontrano però delle serie difficoltà nel calcolo del campo centrale, infatti
+riscontrano però delle serie difficoltà nel calcolo del campo centrale, 
+infatti
 nei nuclei non si ha alcun campo centrale. Per superare questa difficoltà si
 ipotizza che tutti i nucleoni generino una buca di potenziale media entro cui
 ciascun nucleone, in prima approssimazione, si muova indipendentemente dagli
@@ -1126,29 +1320,54 @@ altri (il modello si dice anche \textit{Modello a particelle indipendenti}).
 \subsection{Hamiltoniana del nucleo e  spin-orbita}
 Scriviamo l'Hamiltoniana del nucleo come:
 \begin{equation}
-\mathcal{H} = \sum_{i=1}^A T_i + \frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} 
+\mathcal{H} = \sum_{i=1}^A T_i + \frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} 
+\varphi_{ik}{\left( \vec{r}_{ik}\right)} 
 \end{equation}
-Sia $\vec{r}_i$ il vettore posizione dell'i-esimo nucleone rispetto al centro del nucleo, allora si può formalmente porre:
+Sia $\vec{r}_i$ il vettore posizione dell'i-esimo nucleone rispetto al centro 
+del nucleo, allora si può formalmente porre:
 \begin{equation}
-\frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} = \sum_{i=1}^A \varphi_0{(\vec{r}_i)} + \left[ \frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} - \sum_{i=1}^A \varphi_0{(\vec{r}_i)} \right] 
+\frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( 
+\vec{r}_{ik}\right)} = \sum_{i=1}^A \varphi_0{(\vec{r}_i)} + \left[ \frac{1}{2} 
+\sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} - 
+\sum_{i=1}^A \varphi_0{(\vec{r}_i)} \right] 
 \end{equation}
-Per trattare il nucleo quindi come un insieme di particelle indipendenti che si muovono in un campo centrale si deve trovare il potenziale $\varphi_0$ in modo che l'ultimo addendo nella formula di sopra sia trascurabile. $\varphi_0$ è chiamato \textit{potenziale fittizio}. In più $\varphi_0$ deve essere tale da riprodurre la distribuzione di massa che è poi quella che genera $\varphi_0$.
+Per trattare il nucleo quindi come un insieme di particelle indipendenti che si 
+muovono in un campo centrale si deve trovare il potenziale $\varphi_0$ in modo 
+che l'ultimo addendo nella formula di sopra sia trascurabile. $\varphi_0$ è 
+chiamato \textit{potenziale fittizio}. In più $\varphi_0$ deve essere tale da 
+riprodurre la distribuzione di massa che è poi quella che genera $\varphi_0$.
 
-Dal momento che le interazioni sono a corto raggio si può prevedere che l'andamento di $\varphi_0$ in funzione di $r$ deve essere analogo alla dipendenza di $r$ dalla densità di massa nucleare. Seguendo questo criterio e assumendo che la densità di massa abbia simmetria sferica si può porre:
+Dal momento che le interazioni sono a corto raggio si può prevedere che 
+l'andamento di $\varphi_0$ in funzione di $r$ deve essere analogo alla 
+dipendenza di $r$ dalla densità di massa nucleare. Seguendo questo criterio e 
+assumendo che la densità di massa abbia simmetria sferica si può porre:
 \begin{equation}
-\mathcal{H} = \sum_{i=1}^A \mathcal{H}_i = \sum_{i=1}^A \left[ T_i + \varphi_0{(r_i)} \right] 
+\mathcal{H} = \sum_{i=1}^A \mathcal{H}_i = \sum_{i=1}^A \left[ T_i + 
+\varphi_0{(r_i)} \right] 
 \end{equation}
-dove $\varphi_0(r)$ è adesso un potenziale centrale. Si troveranno così dei livelli di energia con autovalori $E{(n, l)}$ con una certa degenerazione. Opportune scelte di $\varphi_0$ consentono di spiegare alcuni numeri magici. Ad esempio, per $n = 0$ si ha un livello che può contenere al massimo due nucleoni identici, per $n = 1$ e $n = 2$ si possono avere al massimo 6 o 12 nucleoni identici. Così si spiegano i numeri magici 2, 8 e 20.
+dove $\varphi_0(r)$ è adesso un potenziale centrale. Si troveranno così dei 
+livelli di energia con autovalori $E{(n, l)}$ con una certa degenerazione. 
+Opportune scelte di $\varphi_0$ consentono di spiegare alcuni numeri magici. Ad 
+esempio, per $n = 0$ si ha un livello che può contenere al massimo due 
+nucleoni identici, per $n = 1$ e $n = 2$ si possono avere al massimo 6 o 12 
+nucleoni identici. Così si spiegano i numeri magici 2, 8 e 20.
 
-Questo risultato tuttavia va bene soltanto per i primi nuclei magici, e si ha che per come è stata definita $\mathcal{H}$ non si può più riprodurre tutta la serie dei numeri magici. Si deve introdurre nell'Hamiltoniana di ogni nucleone il termine:
+Questo risultato tuttavia va bene soltanto per i primi nuclei magici, e si ha 
+che per come è stata definita $\mathcal{H}$ non si può più riprodurre tutta 
+la serie dei numeri magici. Si deve introdurre nell'Hamiltoniana di ogni 
+nucleone il termine:
 \begin{equation}
-\varphi_S{(r)}\ \vec{l} \cdot \vec{s} \qquad \qquad\text{con}\ \varphi_S{(r)} = \frac{1}{2} \frac{\lambda^2}{r} \frac{\partial \varphi_0}{\partial r}
+\varphi_S{(r)}\ \vec{l} \cdot \vec{s} \qquad \qquad\text{con}\ \varphi_S{(r)} = 
+\frac{1}{2} \frac{\lambda^2}{r} \frac{\partial \varphi_0}{\partial r}
 \end{equation}
 dove $\lambda$ è una costante con le dimensioni di una lunghezza.
 \\
-Questo termine è chiamato anche \textit{termine di interazione spin-orbita} in quando è analogo a quello per l'elettrone. Con l'aggiunta di questo termine l'Hamiltoniana totale diventa:
+Questo termine è chiamato anche \textit{termine di interazione spin-orbita} in 
+quando è analogo a quello per l'elettrone. Con l'aggiunta di questo termine 
+l'Hamiltoniana totale diventa:
 \begin{equation}
-\mathcal{H} = \sum_{i=1}^A \mathcal{H}_i = \sum_{i=1}^A \left[ T_i + \varphi_0{(r_i)} + \varphi_S{(r)}\ \vec{l}_i \cdot \vec{s}_i \right] 
+\mathcal{H} = \sum_{i=1}^A \mathcal{H}_i = \sum_{i=1}^A \left[ T_i + 
+\varphi_0{(r_i)} + \varphi_S{(r)}\ \vec{l}_i \cdot \vec{s}_i \right] 
 \end{equation}
 il modello rimane a particelle indipendenti (vedere \pageref{allegato_6}).
 
@@ -1168,14 +1387,16 @@ E{(n, l, j = l + \frac{1}{2})}\\
 E{(n, l, j = l - \frac{1}{2})}
 \end{cases}
 \end{equation}
-ciascuno di questi due sottolivelli può contenere al massimo $2j + 1$ nucleoni identici. Valutiamo le variazioni di energia $\Delta E$:
+ciascuno di questi due sottolivelli può contenere al massimo $2j + 1$ nucleoni 
+identici. Valutiamo le variazioni di energia $\Delta E$:
 \begin{equation}
 \Delta E = E{(n, l, j)} - E{(n,l)}
 \end{equation}
 in base alla formula di Landè si può scrivere:
 \begin{equation}
 \begin{split}
-\Delta E &\propto \left\langle \vec{L} \cdot \vec{S} \right\rangle = \left[ j(j+1) - l(l+1) - s(s+1) \right] \frac{1}{2} \hbar^2 =\\
+\Delta E &\propto \left\langle \vec{L} \cdot \vec{S} \right\rangle = \left[ 
+j(j+1) - l(l+1) - s(s+1) \right] \frac{1}{2} \hbar^2 =\\
 &= \frac{\hbar ^2}{2} \left[  j(j+1) - l(l+1) - \frac{3}{4} \right]
 \end{split}
 \end{equation}
@@ -1196,27 +1417,36 @@ e dalle costanti si ha:
 quindi si ha un'energia maggiore quando $j$ è più piccolo.
 
 Gli strati più influenzati sono quelli con $n \ge 3$. Ogni strato si scinde in
-due, quello più basso va a cadere nello strato inferiore mentre quello più alto
+due, quello più basso va a cadere nello strato inferiore mentre quello più 
+alto
 rimane nel suo strato. Le energie che caratterizzano i vari strati variano al
-variare del nucleo. In più differiscono anche all'interno di uno stesso nucleo a
+variare del nucleo. In più differiscono anche all'interno di uno stesso nucleo 
+a
 seconda che si parli di protoni o di neutroni (l'energia dei protoni risulterà
 un pò più alta per via della repulsione elettrostatica).
 Dal modello a strati si possono trarre informazioni sullo spin.
 In un sottolivello completo, per il principio di Pauli si ha un momento totale
 di spin nullo. Quindi lo spin totale del nucleo è dato solo dai nucleoni
 esterni. Questo spiega perchè i nuclei con un numero pari di protoni e neutroni
-hanno spin nullo, in quanto $2j+1$ è pari, e quindi se il livello è completo il
+hanno spin nullo, in quanto $2j+1$ è pari, e quindi se il livello è completo 
+il
 numero di nucleoni di quel sottolivello è sicuramente pari.
 
-Vediamo adesso perchè anche se il livello non è completo, ma con un numero pari
+Vediamo adesso perchè anche se il livello non è completo, ma con un numero 
+pari
 di protoni o neutroni, lo spin totale è nullo.
-A questo proposito si deve considerare nell'Hamiltoniana il termine di interazione:
+A questo proposito si deve considerare nell'Hamiltoniana il termine di 
+interazione:
 \begin{equation}
-\frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} = \sum_{i=1}^A \varphi_0{(\vec{r}_i)} + \left[ \frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} - \sum_{i=1}^A \varphi_0{(\vec{r}_i)} \right] 
+\frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( 
+\vec{r}_{ik}\right)} = \sum_{i=1}^A \varphi_0{(\vec{r}_i)} + \left[ \frac{1}{2} 
+\sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} - 
+\sum_{i=1}^A \varphi_0{(\vec{r}_i)} \right] 
 \end{equation}
 fino ad ora abbiamo trascurato il termine tra parentesi:
 \begin{equation}
-\mathcal{H}_\text{res} = \frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} \varphi_{ik}{\left( \vec{r}_{ik}\right)} - \sum_{i=1}^A \varphi_0{(\vec{r}_i)}
+\mathcal{H}_\text{res} = \frac{1}{2} \sum_{k=1}^A \sum_{i \ne k} 
+\varphi_{ik}{\left( \vec{r}_{ik}\right)} - \sum_{i=1}^A \varphi_0{(\vec{r}_i)}
 \end{equation}
 di questa, il contributo principale è dato dall'interazione a due a due dei
 momenti angolari totali, cioè dai termini dell'\textit{interazione di
@@ -1227,17 +1457,22 @@ a_j J_1 J_2
 questo termine implica che i nucleoni non sono più particelle indipendenti,
 quindi $J_i$ non si conserva più. Ciascuna coppia di nucleoni interagenti si
 trova in un autostato del momento angolare totale con autovalore $0 \le
-J_\text{tot} \le 2J$. La configurazione a più bassa energia è quella per $j = 0$
+J_\text{tot} \le 2J$. La configurazione a più bassa energia è quella per $j = 
+0$
 con $a_j > 0$. Si ha che:
 \begin{equation}
-\left\langle \vec{J}_1 \cdot \vec{J}_2 \right\rangle = \frac{1}{2} \left\langle \vec{J}_\text{tot}^2 - \vec{J}_{1}^2 - \vec{J}_{2}^2 \right\rangle = \frac{1}{2} \hbar^2 \left[ j_\text{tot}(j_\text{tot} + 1) - 2j(j + 1) \right] 
+\left\langle \vec{J}_1 \cdot \vec{J}_2 \right\rangle = \frac{1}{2} \left\langle 
+\vec{J}_\text{tot}^2 - \vec{J}_{1}^2 - \vec{J}_{2}^2 \right\rangle = 
+\frac{1}{2} \hbar^2 \left[ j_\text{tot}(j_\text{tot} + 1) - 2j(j + 1) \right] 
 \end{equation}
-Da questa si vede che per $a_j > 0$ il minimo di $E$ si ha per $J_\text{tot} = 0$.
+Da questa si vede che per $a_j > 0$ il minimo di $E$ si ha per $J_\text{tot} = 
+0$.
 
 I nuclei con un numero pari di protoni e neutroni hanno quindi una massa (e
 dunque un'energia) leggermente inferiore rispetto ai corrispondenti nuclei
 isobari dispari-dispari. Questo spiega l'origine del termine empirico $M_S$.
-Una conseguenza del'interazione di appaiamento è che se in un sottolivello si ha
+Una conseguenza del'interazione di appaiamento è che se in un sottolivello si 
+ha
 un numero dispari di nucleoni, il momento angolare totale di spin coincide con
 quello di un nucleone. Quindi se un nucleo ha massa dispari, il suo spin è
 uguale a quello del nucleone spaiato. Questa previsione è confermata
@@ -1248,5 +1483,12 @@ spaiato.
 
 \section{Modello collettivo}
 \subsection{Asimmetria del nucleo}
-Il modello a strati funziona bene per nuclei con strati completi o con solo 1 o 2 nucleoni addizionali. Quando gli strati sono completi, lo spin è zero e si ha simmetria centrale, quindi pieno accordo con l'ipotesi di campo centrale. L'aggiunta di qualche nucleone provoca piccole deviazioni dal campo centrale. Quando però un livello è riempito a metà si hanno deviazioni grandi rispetto all'ipotesi di campo centrale. Un modello che tiene conto di questa asimmetria è il \textit{modello collettivo}.
-Questo ragionamento evidenzia come il modello a strati sia efficace fintanto che si abbia una certa simmetria sferica.
+Il modello a strati funziona bene per nuclei con strati completi o con solo 1 o 
+2 nucleoni addizionali. Quando gli strati sono completi, lo spin è zero e si 
+ha simmetria centrale, quindi pieno accordo con l'ipotesi di campo centrale. 
+L'aggiunta di qualche nucleone provoca piccole deviazioni dal campo centrale. 
+Quando però un livello è riempito a metà si hanno deviazioni grandi rispetto 
+all'ipotesi di campo centrale. Un modello che tiene conto di questa asimmetria 
+è il \textit{modello collettivo}.
+Questo ragionamento evidenzia come il modello a strati sia efficace fintanto 
+che si abbia una certa simmetria sferica.

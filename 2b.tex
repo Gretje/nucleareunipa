@@ -16,7 +16,8 @@ Supponiamo che sia:
 \left[\vec{J_{1}}, \vec{J_{2}} \right] = 0
 \end{equation}
 cioè ogni componete di $\vec{J_{1}}$ commuta con ogni componente di
-$\vec{J_{2}}$. Ogni autostato del sistema 1 sarà caretterizzato dai valori medi:
+$\vec{J_{2}}$. Ogni autostato del sistema 1 sarà caretterizzato dai valori 
+medi:
 \begin{equation}
 \mean{\vec{J_{1}}} = \left( \mean{J_{1x}}, \mean{J_{1y}}, \mean{J_{1z}} \right)
 \end{equation}
@@ -26,8 +27,10 @@ e, ovviamente, anche per il sistema 2 si definisce:
 \end{equation}
 Si pone:
 \begin{align}
-\mean{\vec{J_{1}}} \cdot \mean{\vec{J_{1}}} &= j_{1}^{2}\hbar ^2 & \mean{\vec{J_{1}^{2}}} &= j_{1}\left(j_{1} +1\right)\hbar ^{2} \\
-\mean{\vec{J_{2}}} \cdot \mean{\vec{J_{2}}} &= j_{2}^{2}\hbar ^2 & \mean{\vec{J_{2}^{2}}} &= j_{2}\left(j_{2} +1\right)\hbar ^{2} \\  
+\mean{\vec{J_{1}}} \cdot \mean{\vec{J_{1}}} &= j_{1}^{2}\hbar ^2 & 
+\mean{\vec{J_{1}^{2}}} &= j_{1}\left(j_{1} +1\right)\hbar ^{2} \\
+\mean{\vec{J_{2}}} \cdot \mean{\vec{J_{2}}} &= j_{2}^{2}\hbar ^2 & 
+\mean{\vec{J_{2}^{2}}} &= j_{2}\left(j_{2} +1\right)\hbar ^{2} \\  
 \end{align}
 Definiamo l'operatore 
 \begin{equation}
@@ -38,7 +41,8 @@ commutazione per le sue componenti.
 
 Si avrà che
 \begin{align}
-\mean{\vec{J}}\mean{\vec{J}} &= j^{2} \hbar ^{2} & \mean{\vec{J^{2}}} &= j\left(j+1\right)\hbar 
+\mean{\vec{J}}\mean{\vec{J}} &= j^{2} \hbar ^{2} & \mean{\vec{J^{2}}} &= 
+j\left(j+1\right)\hbar 
 \end{align}
 Si dimostra che fissati $j_{1}$ e $j_{2}$, $j$ può assumere solo dei valori ben
 determinati, in quanto deve essere verificata la relazione
@@ -48,7 +52,8 @@ determinati, in quanto deve essere verificata la relazione
 Questa si dice anche \textit{condizione tringolare}. Questa stessa condizione si
 può riscrivere nella forma:
 \begin{equation}
-\abs{j_{1} - j_{2}} \leq j = \left(m_{j}\right)_\text{\scshape max} \leq j_{1} + j_{2}
+\abs{j_{1} - j_{2}} \leq j = \left(m_{j}\right)_\text{\scshape max} \leq j_{1} 
++ j_{2}
 \end{equation}
 Ma si ha che il generico autovalore $m_{j}$ è dato da
 \begin{equation}
@@ -61,14 +66,16 @@ j = j_{1} + j_{2}, j_{1} + j_{2}-1, \dots , \abs{j_{1} - j_{2}}
 Se $j_{1}<j_{2}$, sono $2j_{1} + 1$ valori. Se $j_{1}>j_{2}$, sono $2j_{2} + 1$
 valori.
 
-In meccanica classica si aveva già la condizione triangolare, la proprietà nuova
+In meccanica classica si aveva già la condizione triangolare, la proprietà 
+nuova
 è che $j$ non può assumere tutti i valori fra il minimo ed il massimo. 
 
 \textit{La degenerazione del sottospazio che si ottiene con $j_{1}$ e $j_{2}$
 fissati è $\left(2j_{1} + 1\right)\left(2j_{2}+1\right)$}.
 
 Consideriamo gli stati $m_{j}$, autostati di $\vec{J}^{2}$ e $J_{z}$. Si ha
-sempre che, fissato $j$, si hanno $2j +1$ autostati. Questa molteplicità si dice
+sempre che, fissato $j$, si hanno $2j +1$ autostati. Questa molteplicità si 
+dice
 \textit{peso statistico} della stato con momento angolare $J$.
 
 Fissati $j_{1}$ e $j_{2}$, il numero totale di stati è 
@@ -86,7 +93,8 @@ Questo numero coincide con il numero di stati
 \end{equation}
 con $j_{1}$ e $j_{2}$ fissati. Effettivamente questi due insieme di vettori (
 $\mid m_{j_{1}}\rangle \mid m_{j_{2}}\rangle$ e $\mid m_{j}\rangle$ con $j_{1}$
-e $j_{2}$ fissati) sono due basi che generano lo stesso sottospazio ma non coincidono.
+e $j_{2}$ fissati) sono due basi che generano lo stesso sottospazio ma non 
+coincidono.
 
 Abbiamo\marginnote{19-12-1997} detto che gli insiemi di stati $ \mid m_{j_{1}}
 m_{j_{2}}\rangle$ e $\mid m_{j}\rangle$ sono due basi di un sottospazio di
@@ -106,19 +114,23 @@ I coefficienti $\langle m_{j_{1}} m_{j_{2}} \mid m_{j} \rangle$ si dicono
 Sappiamo che deve valere la condizione $m_{j}= m_{j_{1}} + m_{j_{2}}$, quindi,
 si ha
 \begin{equation}
-\langle m_{j_{1}} m_{j_{2}} \mid m_{j} \rangle = 0 \quad \quad \text{se $m_{j_{1}} + m_{j_{2}} \neq m_{j}$}
+\langle m_{j_{1}} m_{j_{2}} \mid m_{j} \rangle = 0 \quad \quad \text{se 
+$m_{j_{1}} + m_{j_{2}} \neq m_{j}$}
 \end{equation}
 Vediamo ora come si calcolano gli altri coefficienti di Clebsh-Gordan
 \footnote{Per la \eqref{eq:1}: Si tratta di moltiplicare a sinistra per il BRA
 $\langle m_J + 1 \mid$ [NdT]}
 \begin{align}
 \label{eq:1}
-J_{+} \mid m_{j} \rangle &= c_{+} \mid m_{j} + 1 \rangle & \text{dove } c_{+} &= \langle m_{j} +1 \mid J_{+} \mid m_{j} \rangle \\
-J_{-} \mid m_{j} +1 \rangle &= c_{-} \mid m_{j} \rangle & \text{dove } c_{-} &= \langle m_{j} \mid J_{-} \mid m_{j} +1 \rangle 
+J_{+} \mid m_{j} \rangle &= c_{+} \mid m_{j} + 1 \rangle & \text{dove } c_{+} 
+&= \langle m_{j} +1 \mid J_{+} \mid m_{j} \rangle \\
+J_{-} \mid m_{j} +1 \rangle &= c_{-} \mid m_{j} \rangle & \text{dove } c_{-} &= 
+\langle m_{j} \mid J_{-} \mid m_{j} +1 \rangle 
 \end{align}
 Dato che $J_{-}$ è il coniugato hermitiano di $J_{+}$ si ha che:
 \begin{equation}
-\langle m_{j} \mid J_{-} \mid m_{j} +1 \rangle = \left( \langle m_{j} +1 \mid J_{+} \mid m_{j} \rangle \right) ^{*} \Rightarrow c_{-} = c_{+} ^{*}
+\langle m_{j} \mid J_{-} \mid m_{j} +1 \rangle = \left( \langle m_{j} +1 \mid 
+J_{+} \mid m_{j} \rangle \right) ^{*} \Rightarrow c_{-} = c_{+} ^{*}
 \end{equation}
 Imponendo che $c_{-}$ e $c_{+}$ siano reali (c'è sempre una arbitrarietà nella
 scelta della fase) \footnote{Si può fare questa scelta (entrambi reali) perchè
@@ -129,7 +141,9 @@ J_{-}J_{+} \mid m_{j} + 1 \rangle = c^{2} \mid m_{j} + 1 \rangle
 \end{equation}
 Ma si può scrivere che
 \begin{equation}
-J_{+}J_{-} = \left( J_{x} + iJ_{y} \right)\left( J_{x} - iJ_{y} \right) = J_{x}^{2}  + J_{y}^{2} - i\left(J_{x}J_{y} - J_{y}J_{x} \right) = J_{x}^{2}  + J_{y}^{2} + \hbar J_{z} = \vec{J}^{2} - J_{z} ^{2} + \hbar J_{z}
+J_{+}J_{-} = \left( J_{x} + iJ_{y} \right)\left( J_{x} - iJ_{y} \right) = 
+J_{x}^{2}  + J_{y}^{2} - i\left(J_{x}J_{y} - J_{y}J_{x} \right) = J_{x}^{2}  + 
+J_{y}^{2} + \hbar J_{z} = \vec{J}^{2} - J_{z} ^{2} + \hbar J_{z}
 \end{equation}
 Da questa espressioni di $J_{+}J_{-}$ si può ricavare il valore di $c^{2}$.
 Infatti:
@@ -148,8 +162,10 @@ c^{2} &= \hbar ^{2}  \left[j\left(j+1\right) - \left(m_{j} +1\right)^{2} +
 \end{equation}
 Quindi abbiamo determinato l'azione di $J_{+} e J_{-}$. Infatti
 \begin{align}
-J_{+} \mid m_{j} \rangle &= \hbar \sqrt{j\left(j+1\right) - m_{j}\left(m_{j} +1\right)} \mid m_{j} +1 \rangle \\
-J_{-} \mid m_{j}\rangle &= \hbar \sqrt{j\left(j+1\right) - m_{j}\left(m_{j} -1\right)} \mid m_{j} -1 \rangle
+J_{+} \mid m_{j} \rangle &= \hbar \sqrt{j\left(j+1\right) - m_{j}\left(m_{j} 
++1\right)} \mid m_{j} +1 \rangle \\
+J_{-} \mid m_{j}\rangle &= \hbar \sqrt{j\left(j+1\right) - m_{j}\left(m_{j} 
+-1\right)} \mid m_{j} -1 \rangle
 \end{align}
 Questi coefficienti si annullano se $m_{j} = j$ per il primo e se $m_{j} =-j$
 per il secondo, quindi:
@@ -170,7 +186,9 @@ debbano sommare due spin con $j=1/2$. Quindi si ha che:
 \begin{equation}
 \begin{split}
 \vec{J_{1}} =\vec{S_{1}} \quad \quad \vec{J_{2}} =\vec{S_{2}} & \Rightarrow \\
-\Rightarrow \vec{J} = \vec{S} = \vec{S_{1}} + \vec{S_{2}} & \quad \quad \text{e} \quad \quad \vec{J}^{2} = \vec{S}^{2} = \vec{S_{1}}^{2} + \vec{S_{2}}^{2} + 2\vec{S_{1}}\vec{S_{2}}
+\Rightarrow \vec{J} = \vec{S} = \vec{S_{1}} + \vec{S_{2}} & \quad \quad 
+\text{e} \quad \quad \vec{J}^{2} = \vec{S}^{2} = \vec{S_{1}}^{2} + 
+\vec{S_{2}}^{2} + 2\vec{S_{1}}\vec{S_{2}}
 \end{split}
 \end{equation}
 $\vec{S}$ si dice \textit{operatore di spin totale}. Consideriamo il caso in cui
@@ -205,12 +223,15 @@ peso statistico 1.
 
 Indichiamo per semplicità:
 \begin{align}
-\alpha (1) & \equiv \mid m_{s_{1}} = +1/2 \rangle & \beta (1) & \equiv \mid m_{s_{1}} = -1/2 \rangle \\
-\alpha(2) & \equiv \mid m_{s_{2}} = +1/2 \rangle & \beta (2) & \equiv \mid m_{s_{2}} = -1/2 \rangle 
+\alpha (1) & \equiv \mid m_{s_{1}} = +1/2 \rangle & \beta (1) & \equiv \mid 
+m_{s_{1}} = -1/2 \rangle \\
+\alpha(2) & \equiv \mid m_{s_{2}} = +1/2 \rangle & \beta (2) & \equiv \mid 
+m_{s_{2}} = -1/2 \rangle 
 \end{align}
 Quindi gli stati della base disaccoppiata sono: 
 \begin{align}
-\alpha (1) \alpha (2), & \alpha (1) \beta (2), & \beta (1) \alpha (2), & \beta(1) \beta (2) 
+\alpha (1) \alpha (2), & \alpha (1) \beta (2), & \beta (1) \alpha (2), & 
+\beta(1) \beta (2) 
 \end{align}
 Gli stati di tripletti e di singoletto si possono scrivere come combinazione
 lineare di questi 4 stati di base.
@@ -226,7 +247,8 @@ Indichiamo gli stati della base accoppiata con
 \end{cases}
 \]
 \begin{equation}
-  \chi_{s}^{\text{(\text{singoletto})}} (1,2) = \dfrac{1}{\sqrt{2}}\left[ \alpha(1)\beta(2) - \beta(1)\alpha(2)\right] 
+  \chi_{s}^{\text{(\text{singoletto})}} (1,2) = \dfrac{1}{\sqrt{2}}\left[ 
+\alpha(1)\beta(2) - \beta(1)\alpha(2)\right] 
 \end{equation}
 Per ricavare questi coefficienti conviene ritornare al formalismo con i ket.
 \begin{align}
@@ -244,13 +266,16 @@ si può porre:
 Si può scegliere questa costante uguale a 1 (questa scelta renderà i
 coefficienti di Clabsh-Gordan reali), cioè:
 \begin{equation}
-\mid m_{j} = 1 \rangle = \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} =\dfrac{1}{2} \rangle
+\mid m_{j} = 1 \rangle = \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} =\dfrac{1}{2} 
+\rangle
 \end{equation}
 Stesso discorso si può fare per $m_{j} = -1$ e si ottiene:
 \begin{equation}
-\mid m_{j} = -1 \rangle = \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} =-\dfrac{1}{2} \rangle
+\mid m_{j} = -1 \rangle = \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} 
+=-\dfrac{1}{2} \rangle
 \end{equation}
-Rimane da determinare i due stati con $m_{j} = 0$. Per fare ciò conviene usare i
+Rimane da determinare i due stati con $m_{j} = 0$. Per fare ciò conviene usare 
+i
 due operatori $J_{+}$ e $J_{-}$:
 \begin{align}
 J_{+} &= J_{x} + iJ_{y} = J_{1+} + J_{2+} \\
@@ -259,10 +284,17 @@ J_{-} &= J_{x} - iJ_{y} = J_{1-} + J_{2-}
 Applichiamo $J_{-}$ allo stato $m_{j} = +1$. Si ottiene che:
 \begin{equation}
 \begin{split}
-J_{-}\mid m_{j} = +1 \rangle &= \left(J_{1-} + J_{2-}\right) \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2}\rangle = \\
-&= J_{1-}  \mid m_{j_{1}} = \dfrac{1}{2}\mid m_{j_{2}} = \dfrac{1}{2}\rangle + J_{2-} \mid m_{j_{1}} = \dfrac{1}{2}\mid m_{j_{2}} = \dfrac{1}{2}\rangle = \\
-&= \hbar \sqrt{\dfrac{1}{2}\dfrac{3}{2}-\dfrac{1}{2}\left(-\dfrac{1}{2}\right)} \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2} \rangle + \hbar \sqrt{\dfrac{1}{2}\dfrac{3}{2}-\dfrac{1}{2}\left(-\dfrac{1}{2}\right)} \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2} \rangle = \\
-&= \hbar \left[ \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2} \rangle + \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2} \rangle \right]
+J_{-}\mid m_{j} = +1 \rangle &= \left(J_{1-} + J_{2-}\right) \mid m_{j_{1}} = 
+\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2}\rangle = \\
+&= J_{1-}  \mid m_{j_{1}} = \dfrac{1}{2}\mid m_{j_{2}} = \dfrac{1}{2}\rangle + 
+J_{2-} \mid m_{j_{1}} = \dfrac{1}{2}\mid m_{j_{2}} = \dfrac{1}{2}\rangle = \\
+&= \hbar \sqrt{\dfrac{1}{2}\dfrac{3}{2}-\dfrac{1}{2}\left(-\dfrac{1}{2}\right)} 
+\mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2} \rangle + \hbar 
+\sqrt{\dfrac{1}{2}\dfrac{3}{2}-\dfrac{1}{2}\left(-\dfrac{1}{2}\right)} \mid 
+m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2} \rangle = \\
+&= \hbar \left[ \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2} 
+\rangle + \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2} \rangle 
+\right]
 \end{split}
 \end{equation}
 Ma questo deve essere uguale a:
@@ -271,21 +303,31 @@ J_{-} \mid m_{j} = +1 \rangle = \hbar \sqrt{2}\mid m_{j} = 0 \rangle
 \end{equation}
 Quindi abbiamo trovato che:
 \begin{equation}
-\mid m_{j} = 0 \rangle = \dfrac{1}{\sqrt{2}}\left[ \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2} \rangle + \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2}\rangle \right] 
+\mid m_{j} = 0 \rangle = \dfrac{1}{\sqrt{2}}\left[ \mid m_{j_{1}} = 
+-\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2} \rangle + \mid m_{j_{1}} = 
+\dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2}\rangle \right] 
 \end{equation}
 con $j=1$. 
 \breaknote
 Rimane\marginnote{12-1-1998} da ricavare i coefficienti di Clebsh-Gordan per lo
 stato di singoletto
 \begin{align}
-\mid m_{j} = j = 0 \rangle &= a \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2} \rangle + b \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = \dfrac{1}{2} \rangle \\
-\abs{a} ^{2} + \abs{b} ^{2} &= 1  \quad \quad \text{\textit{condizione di normalizzazione}}
+\mid m_{j} = j = 0 \rangle &= a \mid m_{j_{1}} = \dfrac{1}{2}, m_{j_{2}} = 
+-\dfrac{1}{2} \rangle + b \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = 
+\dfrac{1}{2} \rangle \\
+\abs{a} ^{2} + \abs{b} ^{2} &= 1  \quad \quad \text{\textit{condizione di 
+normalizzazione}}
 \end{align}
 Per ricavare $a$ e $b$ basta applicare l'operatore $J_{-} = J_{1-} + J_{2-}$:
 \begin{equation}
 \begin{split}
-J_{-} \mid m_{j} = j = 0 \rangle = 0 &= a\left(J_{1-} \mid m_{j_{1}} = \dfrac{1}{2} \rangle \right) \mid m_{j_{2}} = -\dfrac{1}{2}\rangle + b\mid m_{j_{1}} = -\dfrac{1}{2} \rangle \left( J_{2-} \mid m_{j_{2}} = \dfrac{1}{2} \rangle \right) = \\
-&= \hbar \left[a \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2}\rangle + b\mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = -\dfrac{1}{2}\rangle \right] 
+J_{-} \mid m_{j} = j = 0 \rangle = 0 &= a\left(J_{1-} \mid m_{j_{1}} = 
+\dfrac{1}{2} \rangle \right) \mid m_{j_{2}} = -\dfrac{1}{2}\rangle + b\mid 
+m_{j_{1}} = -\dfrac{1}{2} \rangle \left( J_{2-} \mid m_{j_{2}} = \dfrac{1}{2} 
+\rangle \right) = \\
+&= \hbar \left[a \mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = 
+-\dfrac{1}{2}\rangle + b\mid m_{j_{1}} = -\dfrac{1}{2}, m_{j_{2}} = 
+-\dfrac{1}{2}\rangle \right] 
 \end{split}
 \end{equation}
 Quindi si può scegliere, ricordando anche la condizione di normalizzazione, 
@@ -310,7 +352,9 @@ scambio di 1 e 2}.
 
 Per le funzioni di singoletto si ha che:
 \begin{equation}
-\chi _{s} ^{(\text{singoletto})} (2,1) = \dfrac{1}{\sqrt{2}} \left[ \alpha(2)\beta(1) - \beta(2)\alpha(1) \right] = -\chi _{s} ^{(\text{singoletto})} (1,2)
+\chi _{s} ^{(\text{singoletto})} (2,1) = \dfrac{1}{\sqrt{2}} \left[ 
+\alpha(2)\beta(1) - \beta(2)\alpha(1) \right] = -\chi _{s} 
+^{(\text{singoletto})} (1,2)
 \end{equation}
 quindi \textit{$\chi_{s} ^{(\text{singoletto})}$ è antisimmetrica rispetto allo
 scambio di 1 e 2}.
@@ -337,8 +381,10 @@ dove $l$ è il numero quantico orbitale del sistema dei due fermioni. Quindi
 tenendo conto di questo ulteriore risultato si arriva alla seguente
 \textit{regola di selezione}:
 \begin{itemize}
-\item \textit{se i due fermioni si trovano nello stato di tripletto, $l$ deve essere dispari};
-\item \textit{se i due fermioni si trovano nello stato di singoletto, $l$ deve essere pari}.
+\item \textit{se i due fermioni si trovano nello stato di tripletto, $l$ deve 
+essere dispari};
+\item \textit{se i due fermioni si trovano nello stato di singoletto, $l$ deve 
+essere pari}.
 \end{itemize}
 In maniera più compatta di può scrivere:
 \begin{empheq}[box=% 
@@ -351,7 +397,8 @@ validità della statistica di Fermi-Dirac, dato che deve essere:
 \begin{align}
 & \Psi _\text{TOT} (1,2) = - \Psi _\text{TOT} (2,1) \\
 & \chi _{s} ^{(\text{tripletto})} (1,2) = \chi _{s} (2,1) \\
-& \chi _{s} ^{(\text{singoletto})} (1,2) = -\chi _{s} ^{(\text{singoletto})} (2,1) \\
+& \chi _{s} ^{(\text{singoletto})} (1,2) = -\chi _{s} ^{(\text{singoletto})} 
+(2,1) \\
 & \phi (\vec{r_{2,1}}) = \phi (\vec{-r_{1,2}}) = (-1)^{l}\phi (\vec{r_{1,2}})
 \end{align}
 
@@ -361,24 +408,29 @@ validità della statistica di Fermi-Dirac, dato che deve essere:
 Il nucleo atomico fu scoperto nel 1911 da Rutherford. Egli mandò un fascio di
 particella $\alpha$ contro un sottile strato metallico. Prima di questo
 esperimento si pensava che l'atomo seguisse il modello a ``panettone''. Si
-sapeva, però, che la quasi totalità della massa atomica era dovuta alle cariche
+sapeva, però, che la quasi totalità della massa atomica era dovuta alle 
+cariche
 positive. Secondo questo modello \textit{una particella $\alpha$ con alta
 energia e grande massa avrebbe dovuto subire una deflessione molto piccola}
 nell'attraversare lo strato e, inoltre, questa deflessione non poteva certo
 essere dovuta ad altre forze, oltre a quelle elettrostatiche. Rutherford
-osservò, invece, \textit{grandi angoli di deflessione} che erano in buon accordo
+osservò, invece, \textit{grandi angoli di deflessione} che erano in buon 
+accordo
 con la sezione d'urto differenziale:
 \begin{empheq} [box=%
 \fbox] {align}
-\dfrac{d\sigma}{d\Omega} &= \dfrac{1}{4}\left[\dfrac{ze(2e)}{m_{\alpha}v^{2}} \right] ^{2} \dfrac{1}{\sin ^{4}(\theta /2)} 
+\dfrac{d\sigma}{d\Omega} &= \dfrac{1}{4}\left[\dfrac{ze(2e)}{m_{\alpha}v^{2}} 
+\right] ^{2} \dfrac{1}{\sin ^{4}(\theta /2)} 
 \end{empheq}
 dove $d\Omega = 2 \pi \sin \theta \ d\theta$.
 
 \begin{wrapfigure}{l}{7cm}
 	\input{img/alpha_p53}
-	\caption{Diffusione di particelle di carica $2e$ da un centro diffusore di carica $ze$.}
+	\caption{Diffusione di particelle di carica $2e$ da un centro diffusore 
+di carica $ze$.}
 \end{wrapfigure}
-Questa è nota come \textit{formula di Rutherford} e si può ricavare teoricamente
+Questa è nota come \textit{formula di Rutherford} e si può ricavare 
+teoricamente
 in termini classici considerando un fascio uniforme di estensione infinita, di
 particelle di carica $2e$, che viene diffuso da un centro fisso e puntiforme di
 carica $ze$ (la formula vale anche se la carica $ze$ fosse negativa).
@@ -394,10 +446,12 @@ La forza è
 \begin{equation}
 F \propto \dfrac{2ze^{2}}{r^{2}}
 \end{equation}
-Quindi per $p$ piccoli, si avranno $\theta$ grandi e viceversa. Si può affermare
+Quindi per $p$ piccoli, si avranno $\theta$ grandi e viceversa. Si può 
+affermare
 che verranno deflesse nell'angolo compreso tra $\theta$ e $\theta +d\theta$
 tutte e sole le paarticelle che hanno un parametro d'urto $p$ compreso tra $p$ e
-$p + dp$. Questo perchè \textit{$p(\theta)$ è monotona e, quindi, iniettiva}. Si
+$p + dp$. Questo perchè \textit{$p(\theta)$ è monotona e, quindi, iniettiva}. 
+Si
 avrà che il numero di particelle che nell'unità di tempo viene deflesso
 nell'angolo tra $\theta$ e $\theta + d\theta$ si può scrivere come:
 \begin{equation}
@@ -413,7 +467,9 @@ Quindi si ottiene che:
 \end{equation}
 Confrontando questa con la formula di Rutherford si deduce che:
 \begin{equation}
-2\pi p(\theta) \cdot \dfrac{dp(\theta)}{d\Omega} = \dfrac{1}{4}\left[\dfrac{ze(2e)}{m_{\alpha}v^{2}} \right] ^{2} \dfrac{1}{\sin ^{4} (\theta /2)}
+2\pi p(\theta) \cdot \dfrac{dp(\theta)}{d\Omega} = 
+\dfrac{1}{4}\left[\dfrac{ze(2e)}{m_{\alpha}v^{2}} \right] ^{2} \dfrac{1}{\sin 
+^{4} (\theta /2)}
 \end{equation}
 Da questa equazione differenziale si può trovare la funzione $p(\theta)$.
 
@@ -452,7 +508,8 @@ forza su questa particella è:
 \begin{equation}
 \vec{F} = q\left[ \vec{E} + \dfrac{\vec{v}}{c}\wedge \vec{H} \right]
 \end{equation}
-Si regolano $E$ ed $H$ in modo che il moto sia rettilineo ed uniforme, cioè deve
+Si regolano $E$ ed $H$ in modo che il moto sia rettilineo ed uniforme, cioè 
+deve
 essere:
 \begin{equation}
 \mid \vec{E} \mid = \dfrac{1}{c} \mid \vec{v} \wedge \vec{H} \mid
@@ -497,11 +554,13 @@ conservazione della quantità di moto deve essere anche che la quantità di moto
 del deuterio deve essere uguale a quella del fotone. Quindi si può scrivere per
 le energie cinetiche
 \begin{equation}
-T_{d} = \dfrac{1}{2} \dfrac{p^{2}}{m_{d}} = \dfrac{1}{2} \dfrac{\hbar ^{2} \omega ^{2}}{m_{d} c^{2}}
+T_{d} = \dfrac{1}{2} \dfrac{p^{2}}{m_{d}} = \dfrac{1}{2} \dfrac{\hbar ^{2} 
+\omega ^{2}}{m_{d} c^{2}}
 \end{equation}
 Quindi per \textit{la massa del neutrone} si ha:
 \begin{equation}
-m_{n} = m_{d} - m_{p} + \dfrac{\hbar \omega}{c^{2}} \left[1 + \dfrac{1}{2} \dfrac{\hbar \omega}{m_{d} c^{2}} \right]
+m_{n} = m_{d} - m_{p} + \dfrac{\hbar \omega}{c^{2}} \left[1 + \dfrac{1}{2} 
+\dfrac{\hbar \omega}{m_{d} c^{2}} \right]
 \end{equation}
 Ritornando alle proprità dei nuclei si osservò che la massa $A$ è sempre
 maggiore di $Z$. La prima ipotesi che di fece fu che nel nucleo vi fossero $A$
@@ -553,7 +612,8 @@ Sperimentalmente si verifica che:
 \end{empheq}
 Tenuto conto di ciò, è lecito scrivere:
 \begin{equation}
-M_\text{nucl} = M - zm_{e} + \dfrac{\Delta E_{a}}{c^{2}} \simeq M - zm_{e} \simeq M
+M_\text{nucl} = M - zm_{e} + \dfrac{\Delta E_{a}}{c^{2}} \simeq M - zm_{e} 
+\simeq M
 \end{equation}
 Con queste approssimazioni si può scirvere per $\Delta E_\text{nucl}$:
 \begin{equation}
@@ -595,7 +655,8 @@ cioè il volume nucleare risulta proporzionale al numero di massa. Dal momento
 che $M(A) = A \ UM$, si trova che \textit{la densità è pressochè costante per
 tutti i nuclei}:
 \begin{equation}
-  \rho_{m} = \dfrac{M(A)}{V(A)} = \dfrac{A \ UM}{V(A)} = \dfrac{3}{4\pi} \dfrac{1 \
+  \rho_{m} = \dfrac{M(A)}{V(A)} = \dfrac{A \ UM}{V(A)} = \dfrac{3}{4\pi} 
+\dfrac{1 \
   UM}{r_{0}^{3}} \simeq 10^{14} \ \text{g/cm}^{3}
 \end{equation}
 Da questa densità \textit{si può immaginare il nucleo costituito da un fluido
@@ -608,7 +669,8 @@ GeV$. Consideriamo un elettrone libero che si trova in uno stato stazionario,
 quindi la funzione d'onda è
 \begin{align}
 \phi _{e} &(\vec{r}) \propto e^{(i\vec{k} \cdot \vec{r})} \\
-\vec{P_{e}} &= \hbar \vec{k} \Rightarrow \lambda _{e} = \dfrac{2\pi}{K} = \text{lunghezza d'onda di De Broglie}
+\vec{P_{e}} &= \hbar \vec{k} \Rightarrow \lambda _{e} = \dfrac{2\pi}{K} = 
+\text{lunghezza d'onda di De Broglie}
 \end{align} 
 Se il nucleo fosse puntiforme, la funzione d'onda dell'elettrone avrebbe nel
 nucleo valore $\phi _{e} (0)$. Se, invece, il nucleo non fosse puntiforme,
@@ -618,7 +680,8 @@ allora
 \phi _{e} (\vec{R}) & \simeq \phi _{e}(0) & \text{per} \ KR \ll 1
 \end{align}
 Dunque in questo secondo caso l'elettrone vede sempre un nucleo puntiforme.
-Questo non è più vero quando $\lambda _{e}$ diventa più piccola. Quindi si ha:
+Questo non è più vero quando $\lambda _{e}$ diventa più piccola. Quindi si 
+ha:
 \begin{empheq} [box=%
 \fbox]{equation}
 \text{\textcrlambda} = \dfrac{\lambda _{e}}{2\pi} = \dfrac{1}{K} \gg R \simeq
@@ -632,7 +695,8 @@ di $R$. Infatti \textit{l'energia di $1 \ GeV$ corrisponde a
   e fisso. In questo caso, dovrebbe valere in termini non quantistici la formula
   di Rutherford:
 \begin{equation}
-\dfrac{d\sigma _0}{d\Omega} = \left(\dfrac{d\sigma}{d\Omega}\right) _R = \left( \dfrac{ze^2}{2p_ev_e} \right) ^2 \dfrac{1}{\sin ^{4}(\theta /2)} 
+\dfrac{d\sigma _0}{d\Omega} = \left(\dfrac{d\sigma}{d\Omega}\right) _R = \left( 
+\dfrac{ze^2}{2p_ev_e} \right) ^2 \dfrac{1}{\sin ^{4}(\theta /2)} 
 \end{equation}
 dove $d\Omega = 2 \pi \sin \theta \ d\theta$.
 Questa formula è anche relativisticamente corretta per piccoli valori di
@@ -651,11 +715,13 @@ nucleo puntiforme fisso.
 Sia $\phi (\vec{r})$ un'autofunzione di $H$ con autovalori $E$. Si può
 dimostrare che $\phi (\vec{r})$ per $r$ molto grandi assume la forma asintotica
 \begin{equation}
-\phi (\vec{r}) \propto \left[e^{i\vec{k} \cdot \vec{r}} + f_{0}(\theta) \dfrac{e^{ikr}}{r}\right]
+\phi (\vec{r}) \propto \left[e^{i\vec{k} \cdot \vec{r}} + f_{0}(\theta) 
+\dfrac{e^{ikr}}{r}\right]
 \end{equation}
 per $r\rightarrow \infty$. 
 
-Il primo termine è un autostato di $H_{0}$. Il secondo termine è un'onda sferica
+Il primo termine è un autostato di $H_{0}$. Il secondo termine è un'onda 
+sferica
 uscente dall'origine la cui ampiezza dipende da $\theta$.
 \textit{$f_{0}(\theta)$ ha le dimensioni di una lunghezza e si dice ampiezza di
 scattering}. Infatti $\mid f_{0} (\theta) \mid ^{2} d\Omega$ è probabilità che
@@ -668,7 +734,8 @@ d\sigma _{0} = \mid f_{0} (\theta) \mid ^{2} d\Omega
 \Rightarrow \dfrac{d\sigma _{0}}{d\Omega} = \mid f_{0} (\theta) \mid ^{2}
 \end{empheq}
 Questa coincide con quello di Rutherford se si fa l'approssimazione di Bohr per
-potenziali deboli. Questa approssimazione è abbastanza cottetta se le particelle
+potenziali deboli. Questa approssimazione è abbastanza cottetta se le 
+particelle
 incidenti hanno un'alta energia. 
 
 Nella realtà, il nucleo non è puntiforme e, per distanze inferiori ad R, il
@@ -680,7 +747,9 @@ potenziale non è più coulombiano. Indichiamo con
 Rimaniamo sempre nell'approssimazione di Born per potenziali deboli. Dal punto
 di vista formale di può scrivere
 \begin{equation}
-\dfrac{d\sigma}{d\Omega} = \dfrac{d\sigma _{0}}{d\Omega} \dfrac{\mid f(\theta) \mid ^{2}}{\mid f_{0}(\theta) \mid ^{2}} = \dfrac{d\sigma _{0}}{d\Omega} \mid F \mid ^{2}
+\dfrac{d\sigma}{d\Omega} = \dfrac{d\sigma _{0}}{d\Omega} \dfrac{\mid f(\theta) 
+\mid ^{2}}{\mid f_{0}(\theta) \mid ^{2}} = \dfrac{d\sigma _{0}}{d\Omega} \mid F 
+\mid ^{2}
 \end{equation}
 dove si è posto $\mid F \mid ^{2} = \dfrac{\mid f(\theta) \mid ^{2}}{\mid
   f_{0}(\theta) \mid ^{2}}$.
@@ -697,13 +766,16 @@ Indiachiamo con
 \vec{P_{e}} &= \hbar \vec{k} & \quad \text{quantità di moto iniziale} \\
 \vec{P'_{e}} &= \hbar \vec{k'} & \quad \text{quantità di moto finale} 
 \end{align}
-Per l'ipotesi di nucleo fisso, deve essere $\mid \vec{P_{e}} \mid = \mid \vec{P'_{e}} \mid$ (per la conservazione dell'energia). Deve essere che
+Per l'ipotesi di nucleo fisso, deve essere $\mid \vec{P_{e}} \mid = \mid 
+\vec{P'_{e}} \mid$ (per la conservazione dell'energia). Deve essere che
 \begin{equation}
 \mid \vec{P'_{e}} - \vec{P_{e}} \mid = 2P_{e} \sin (\theta /2)
 \end{equation}
-Il modulo di questo vettore coincide con il modulo dell'impulso trasferito al nucleo. Introduciamo la quantità
+Il modulo di questo vettore coincide con il modulo dell'impulso trasferito al 
+nucleo. Introduciamo la quantità
 \begin{equation}
-\vec{q} = \vec{k'} - \vec{k} \Rightarrow \mid \vec{q}\mid = \dfrac{2P_{e} \sin (\theta /2)}{\hbar}
+\vec{q} = \vec{k'} - \vec{k} \Rightarrow \mid \vec{q}\mid = \dfrac{2P_{e} \sin 
+(\theta /2)}{\hbar}
 \end{equation}
 Definiamo la densità di carica
 \begin{equation}
@@ -716,22 +788,28 @@ dove la funzione $\rho (\vec{r})$ è tale che
 Trascurando gli effetti magnetici, si può dimostrare che
 \begin{empheq}[box=%
 \fbox] {equation}
-\dfrac{f(\theta)}{f_{0}(\theta)} = F = F(\vec{q}) = \int \rho (\vec{r}) e^{i\vec{q} \cdot \vec{r}} d^{3}\vec{r}
+\dfrac{f(\theta)}{f_{0}(\theta)} = F = F(\vec{q}) = \int \rho (\vec{r}) 
+e^{i\vec{q} \cdot \vec{r}} d^{3}\vec{r}
 \end{empheq}
-cioè \textit{$F$ è la trosformata di Fourier di $\rho(\vec{r})$}. Da questa formula si vede il legame tra $F$ e $\rho$.
+cioè \textit{$F$ è la trosformata di Fourier di $\rho(\vec{r})$}. Da questa 
+formula si vede il legame tra $F$ e $\rho$.
 
-Se si considera il nucleo non fisso, si può dimostrare che rimane valida l'espressione per $F$ appena riportata. 
+Se si considera il nucleo non fisso, si può dimostrare che rimane valida 
+l'espressione per $F$ appena riportata. 
 
 Si ha, ovviamente, che
 \begin{equation}
 F(0) = 1
 \end{equation}
-Questo significa che se l'impulso trasferito al nucleo fosse nullo, risulterebbe:
+Questo significa che se l'impulso trasferito al nucleo fosse nullo, 
+risulterebbe:
 \begin{equation}
-\dfrac{d\sigma}{d\Omega} = \dfrac{d\sigma _{0}}{d\Omega} \mid F(0) \mid ^{2} = \dfrac{d\sigma _{0}}{d\Omega} = \text{sezione d'urto di Rutherford}
+\dfrac{d\sigma}{d\Omega} = \dfrac{d\sigma _{0}}{d\Omega} \mid F(0) \mid ^{2} = 
+\dfrac{d\sigma _{0}}{d\Omega} = \text{sezione d'urto di Rutherford}
 \end{equation}
 \begin{equation}
-\lim _{\vec{P_{e}} \rightarrow 0} \dfrac{d\sigma}{d\Omega} = \dfrac{d\sigma _{0}}{d\Omega}
+\lim _{\vec{P_{e}} \rightarrow 0} \dfrac{d\sigma}{d\Omega} = \dfrac{d\sigma 
+_{0}}{d\Omega}
 \end{equation}
 Quindi, \textit{se la quantità di moto dell'elettrone non è sufficientemente
 grande l'elettrone vedrà il nucleo puntiforme}. Questa è, dunque, una buona
